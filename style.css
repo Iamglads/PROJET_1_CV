@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+/*-----------------------------------
+            GENERAL
+------------------------------------*/
+.container {
+  width: 70%;
+  height: auto;
+  display: flex;
+  box-shadow: 2px 2px 2px #c3c2c2;
+}
+.container .fas {
+  font-size: 25px;
+  margin-right: 10px;
+}
+.container h2 {
+  color: #0097a7;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.container hr {
+  color: #0097a7;
+}
+.container li {
+  list-style-type: none;
+}
+@media (max-width: 599px) {
+  .container {
+    width: 100%;
+    display: block;
+    border: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 769px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/*-----------------------------------
+            left side
+------------------------------------*/
+.blockLeft {
+  background-color: #00acc1;
+  width: 30%;
+  height: auto;
+}
+.blockLeft__img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.blockLeft__img img {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+}
+.blockLeft__img img:hover {
+  border: 2px solid white;
+}
+.blockLeft__heading {
+  background-color: #263238;
+  text-align: center;
+  padding: 0.2em;
+  border-radius: 5px;
+}
+.blockLeft__heading:hover {
+  color: white;
+}
+.blockLeft li {
+  list-style-type: none;
+  margin-bottom: 20px;
+  color: #263238;
+  padding-left: 1em;
+}
+.blockLeft__paragraph {
+  color: #263238;
+  padding: 1em;
+}
+.blockLeft .fab {
+  font-size: 25px;
+  color: #263238;
+  border: 2px solid #263238;
+  padding: 0.2em;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.blockLeft .fab:hover {
+  color: #0097a7;
+}
+.blockLeft .fa-linkedin:hover {
+  color: #0e76a8;
+}
+.blockLeft .fa-facebook:hover {
+  color: #3b5998;
+}
+.blockLeft .fa-instagram:hover {
+  color: #3f729b;
+}
+.blockLeft__hobbies {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.blockLeft__hobbies .fa-video, .blockLeft__hobbies .fa-dumbbell, .blockLeft__hobbies .fa-running {
+  cursor: pointer;
+  color: #263238;
+  border: 2px solid #263238;
+  border-radius: 100px;
+  padding: 0.5em;
+}
+.blockLeft__hobbies .fa-video:hover, .blockLeft__hobbies .fa-dumbbell:hover, .blockLeft__hobbies .fa-running:hover {
+  color: white;
+}
+@media (max-width: 599px) {
+  .blockLeft {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 100px;
+    padding-top: 1em;
+  }
+}
+
+/*-----------------------------------
+            right side
+------------------------------------*/
+.blockRight {
+  width: 70%;
+  margin-top: 2%;
+}
+.blockRight span {
+  color: #00acc1;
+}
+.blockRight h1 {
+  font-size: 20px;
+}
+.blockRight h3 {
+  font-size: 12px;
+  color: #6b6868;
+  font-weight: bold;
+}
+.blockRight h4 {
+  font-size: 10px;
+  color: #6b6868;
+}
+.blockRight p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10px;
+  color: #6b6868;
+}
+.blockRight .right {
+  list-style-type: none;
+}
+.blockRight .fa-suitcase, .blockRight .fa-pencil-alt, .blockRight .fa-award {
+  color: #00acc1;
+}
+.blockRight header {
+  padding: 1em;
+}
+.blockRight header .name {
+  font-size: 2em;
+}
+.blockRight header p {
+  font-size: 1em;
+}
+.blockRight header .headerDivider {
+  width: 50px;
+  color: #00acc1;
+  margin-top: 0.5em;
+}
+@media (max-width: 599px) {
+  .blockRight header {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100px;
+    margin-top: 0px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background: linear-gradient(white #00acc1);
+    box-shadow: 0 2px 0 grey;
+  }
+  .blockRight header .name {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 599px) {
+  .blockRight {
+    width: 100%;
+    height: auto;
+  }
+  .blockRight ul {
+    display: block;
+    padding: 0.5em;
+    border: 1px solid whitesmoke;
+    background-color: #00acc1, 10%;
+    border-radius: 5px;
+    box-shadow: 1px 1px #0097a7;
+    cursor: pointer;
+  }
+  .blockRight ul:hover {
+    box-shadow: 1px 2px #0097a7;
+  }
+  .blockRight ul li {
+    list-style-type: none;
+  }
+  .blockRight header .name {
+    font-size: 1.5em;
+  }
+  .blockRight header p {
+    font-size: 0.8em;
+  }
+}
+
+.education {
+  padding: 1em;
+  height: auto;
+}
+.education ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.education ul .educationLeft {
+  width: 50%;
+}
+
+.experience {
+  padding: 1em;
+  height: auto;
+}
+.experience ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.experience ul .experienceLeft {
+  width: 50%;
+}
+
+.recommendation {
+  height: auto;
+  padding: 1em;
+}
+.recommendation ul {
+  display: flex;
+  justify-content: space-around;
+}
+.recommendation ul li {
+  padding: 1em;
+  list-style-type: none;
+  color: grey;
+}
+
+/*# sourceMappingURL=style.css.map */

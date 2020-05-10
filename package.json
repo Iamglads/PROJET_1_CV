@@ -1,0 +1,27 @@
+{
+  "name": "projet_2_cv",
+  "version": "1.0.0",
+  "description": "\"Projet 1 formation OC\"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch style.scss:style.css",
+    "prefix":"postcss style.css --use autoprefixer -d css/prefixed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iamglads/gladstonaristoverne.git"
+  },
+  "author": "Gladston Aristoverne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iamglads/gladstonaristoverne/issues"
+  },
+  "homepage": "https://github.com/Iamglads/gladstonaristoverne#readme",
+  "dependencies": {
+    "autoprefixer": "^9.7.6",
+    "postcss": "^7.0.29",
+    "postcss-cli": "^7.1.1",
+    "sass": "^1.26.5",
+    "browserslist":"last 4 versions"
+  }
+}
