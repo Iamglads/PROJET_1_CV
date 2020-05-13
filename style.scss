@@ -3,6 +3,8 @@ $secondColor:rgba(0,172,193 ,1);
 $thirdColor:rgba(0,188,212 ,1);
 $h2Bg:rgba(38,50,56 ,1);
 $greyColor:rgb(107, 104, 104);
+$oneEm:1em;
+$whiteColor:white;
 
 *{
     margin: 0;
@@ -22,7 +24,8 @@ body{
     width: 70%;
     height: auto;
     display: flex;
-    box-shadow: 2px 2px 2px rgb(195, 194, 194);
+    box-shadow: 2px 4px 2px rgb(195, 194, 194);
+    border-radius: 10px;
 
     .fas{ //Icones
         font-size: 25px;
@@ -41,13 +44,22 @@ body{
     li{
         list-style-type: none;
       }
+      // padding de 1em
+      header,
+      .education,
+      .experience,
+      .recommendation,
+      .blockleft__hobbies,
+      .blockLeft__paragraph{
+          padding:$oneEm;
+      }
       
       @media(max-width: 599px){
         width: 100%;
         display: block;
         border: none;
       }
-      @media(min-width: 576px) and (max-width: 769px){
+      @media(min-width: 599px) and (max-width: 769px){
           width: 100%;
       }
 }
@@ -67,9 +79,9 @@ body{
         border-radius: 100%;
         width: 150px;
         height: 150px;
-        &:hover{
-            border: 2px solid white;
-        }
+            &:hover{
+                border: 2px solid white;
+            }
         }
     }
     
@@ -78,20 +90,20 @@ body{
         text-align: center;
         padding: 0.2em;
         border-radius: 5px;
-        &:hover{
-            color: white;
-        }
+            &:hover{
+                color: white;
+            }
+    }
+    .blockLeft__ul{
+        padding: $oneEm;
     }
     li{
-        list-style-type: none;
         margin-bottom: 20px;
         color: $h2Bg;
-        padding-left: 1em;
     }
 
     &__paragraph{
         color: $h2Bg;
-        padding: 1em;
     }
 
     .fab{
@@ -101,9 +113,9 @@ body{
         padding: 0.2em;
         border-radius: 50px;
         cursor: pointer;
-        &:hover{
-            color: $firstColor;
-        }
+            &:hover{
+                color: $firstColor;
+            }
     }
     .fa-linkedin{
         &:hover{
@@ -123,19 +135,19 @@ body{
     }
 
     &__hobbies{
-        padding: 1em;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
          .fa-video, .fa-dumbbell, .fa-running{
             cursor: pointer;
+            text-align: center;
             color: $h2Bg;
             border: 2px solid $h2Bg;
             border-radius: 100px;
             padding: 0.5em;
-            &:hover{
-                color: white;
-            }
+                &:hover{
+                    color: $whiteColor;
+                }
         }
     }
    
@@ -144,14 +156,14 @@ body{
         height: auto;
         position: relative;
         margin-top: 100px;   
-        padding-top: 1em;
+        padding-top: $oneEm;
+        background: linear-gradient($secondColor, $whiteColor);
     }
 }
 
 /*-----------------------------------
             right side
 ------------------------------------*/
-
 
 .blockRight{
     width: 70%;
@@ -177,22 +189,17 @@ body{
         color: $greyColor;
     }
 
-    .right{
-        list-style-type: none;
-    }
-
     .fa-suitcase, .fa-pencil-alt, .fa-award{
         color: $secondColor;
     }
 
     header{
-        padding: 1em;
         .name{
             font-size: 2em;
         }
     
         p{
-            font-size: 1em;
+            font-size: $oneEm;
         }
         .headerDivider{ // trait
             width: 50px;
@@ -208,7 +215,6 @@ body{
             top: 0px;
             left: 0px;
             position: absolute;
-            background: linear-gradient(white $secondColor);
             box-shadow: 0 2px 0 grey;
             .name{
                 font-size:1.5em;
@@ -231,9 +237,6 @@ body{
                 box-shadow: 1px 2px $firstColor;
             }
             
-            li{
-                list-style-type: none;
-            }
         }
     
         header{
@@ -251,7 +254,6 @@ body{
 
 
 .education{ //section education
-    padding: 1em;
     height: auto;
     ul{
         display: flex;
@@ -265,7 +267,6 @@ body{
 
 
 .experience{ //section experience
-    padding: 1em;
     height: auto;
     ul{
         display: flex;
@@ -280,17 +281,19 @@ body{
 
 .recommendation{ // section recommendations
     height: auto;
-    padding: 1em;
     ul{
 
         display: flex;
         justify-content: space-around;
         li{
-            padding: 1em;
-            list-style-type: none;
+            padding: $oneEm;
             color: grey;
         }
     }
+}
+
+footer{
+    text-align: center;
 }
 
 
