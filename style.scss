@@ -1,3 +1,4 @@
+// VARIABLES
 $firstColor:rgba(0,151,167 ,1);
 $secondColor:rgba(0,172,193 ,1);
 $thirdColor:rgba(0,188,212 ,1);
@@ -5,6 +6,11 @@ $h2Bg:rgba(38,50,56 ,1);
 $greyColor:rgb(107, 104, 104);
 $oneEm:1em;
 $whiteColor:white;
+$breakpoint:(
+    mobile:599px,
+    tablet:769px
+);
+@import "./mixins.scss";
 
 *{
     margin: 0;
@@ -49,17 +55,17 @@ body{
       .education,
       .experience,
       .recommendation,
-      .blockleft__hobbies,
+      .blockLeft__skills,
       .blockLeft__paragraph{
           padding:$oneEm;
       }
       
-      @media(max-width: 599px){
+      @include forMobile{
         width: 100%;
         display: block;
         border: none;
       }
-      @media(min-width: 599px) and (max-width: 769px){
+      @include forTablet{
           width: 100%;
       }
 }
@@ -134,24 +140,14 @@ body{
         }
     }
 
-    &__hobbies{
+    &__skills{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         flex-wrap: wrap;
-         .fa-video, .fa-dumbbell, .fa-running{
-            cursor: pointer;
-            text-align: center;
-            color: $h2Bg;
-            border: 2px solid $h2Bg;
-            border-radius: 100px;
-            padding: 0.5em;
-                &:hover{
-                    color: $whiteColor;
-                }
-        }
+    
     }
    
-    @media(max-width: 599px){
+    @include forMobile{
         width:100%;
         height: auto;
         position: relative;
@@ -180,7 +176,7 @@ body{
         font-weight: bold;
     }
     h4{
-        font-size: 10px;
+        font-size: 11px;
         color: $greyColor;
     }
     p{
@@ -207,7 +203,7 @@ body{
             margin-top: 0.5em;
         }
 
-        @media(max-width: 599px){
+        @include forMobile{
             width: 100%;
             box-sizing: border-box;
             height: 100px;
@@ -221,7 +217,7 @@ body{
             }
         }
     }
-    @media(max-width: 599px){
+    @include forMobile{
         width:100%;
         height: auto;
     
@@ -250,33 +246,32 @@ body{
         }
     }
 
-}
-
-
-.education{ //section education
-    height: auto;
-    ul{
-        display: flex;
-        justify-content: space-between;
-        margin: 10px;
-        .educationLeft{
-            width: 50%;
+    .education{ //section education
+        height: auto;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            .educationLeft{
+                width: 50%;
+            }
         }
     }
-}
 
-
-.experience{ //section experience
-    height: auto;
-    ul{
-        display: flex;
-        justify-content: space-between;
-        margin: 10px;
-        .experienceLeft{
-            width: 50%;
+    .experience{ //section experience
+        height: auto;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            .experienceLeft{
+                width: 50%;
+            }
         }
     }
+
 }
+
 
 
 .recommendation{ // section recommendations

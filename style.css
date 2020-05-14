@@ -39,18 +39,18 @@ body {
 .container .education,
 .container .experience,
 .container .recommendation,
-.container .blockleft__hobbies,
+.container .blockLeft__skills,
 .container .blockLeft__paragraph {
   padding: 1em;
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .container {
     width: 100%;
     display: block;
     border: none;
   }
 }
-@media (min-width: 599px) and (max-width: 769px) {
+@media screen and (max-width: 769px) {
   .container {
     width: 100%;
   }
@@ -116,23 +116,12 @@ body {
 .blockLeft .fa-instagram:hover {
   color: #3f729b;
 }
-.blockLeft__hobbies {
+.blockLeft__skills {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
-.blockLeft__hobbies .fa-video, .blockLeft__hobbies .fa-dumbbell, .blockLeft__hobbies .fa-running {
-  cursor: pointer;
-  text-align: center;
-  color: #263238;
-  border: 2px solid #263238;
-  border-radius: 100px;
-  padding: 0.5em;
-}
-.blockLeft__hobbies .fa-video:hover, .blockLeft__hobbies .fa-dumbbell:hover, .blockLeft__hobbies .fa-running:hover {
-  color: white;
-}
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .blockLeft {
     width: 100%;
     height: auto;
@@ -162,7 +151,7 @@ body {
   font-weight: bold;
 }
 .blockRight h4 {
-  font-size: 10px;
+  font-size: 11px;
   color: #6b6868;
 }
 .blockRight p {
@@ -184,7 +173,7 @@ body {
   color: #00acc1;
   margin-top: 0.5em;
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .blockRight header {
     width: 100%;
     box-sizing: border-box;
@@ -199,7 +188,7 @@ body {
     font-size: 1.5em;
   }
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .blockRight {
     width: 100%;
     height: auto;
@@ -223,28 +212,26 @@ body {
     font-size: 0.8em;
   }
 }
-
-.education {
+.blockRight .education {
   height: auto;
 }
-.education ul {
+.blockRight .education ul {
   display: flex;
   justify-content: space-between;
   margin: 10px;
 }
-.education ul .educationLeft {
+.blockRight .education ul .educationLeft {
   width: 50%;
 }
-
-.experience {
+.blockRight .experience {
   height: auto;
 }
-.experience ul {
+.blockRight .experience ul {
   display: flex;
   justify-content: space-between;
   margin: 10px;
 }
-.experience ul .experienceLeft {
+.blockRight .experience ul .experienceLeft {
   width: 50%;
 }
 
