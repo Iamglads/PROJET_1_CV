@@ -1,7 +1,7 @@
 // VARIABLES
 $firstColor:rgba(0,151,167 ,1);
-$secondColor:rgba(0,172,193 ,1);
-$thirdColor:rgba(0,188,212 ,1);
+$secondColor:rgb(4, 148, 167);
+$thirdColor:rgba(20, 110, 122, 0.664);
 $h2Bg:rgba(38,50,56 ,1);
 $greyColor:rgb(107, 104, 104);
 $oneEm:1em;
@@ -26,41 +26,41 @@ body{
 /*-----------------------------------
             GENERAL
 ------------------------------------*/
+.fas{ //Icones
+    font-size: 25px;
+    margin-right: 10px;
+}
+h2{
+    color: $firstColor;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+hr{ //divider section
+    color: $firstColor;
+}
+
+li{
+    list-style-type: none;
+  }
+
+ // padding de 1em
+ header,
+ .education,
+ .experience,
+ .recommendation,
+ .blockLeft__hobbies,
+ .blockLeft__paragraph{
+     padding:$oneEm;
+ }
+  
 .container{
     width: 70%;
     height: auto;
     display: flex;
     box-shadow: 2px 4px 2px rgb(195, 194, 194);
     border-radius: 10px;
-
-    .fas{ //Icones
-        font-size: 25px;
-        margin-right: 10px;
-    }
-    h2{
-        color: $firstColor;
-        font-weight: bold;
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
-    hr{ //divider section
-        color: $firstColor;
-    }
-
-    li{
-        list-style-type: none;
-      }
-      // padding de 1em
-      header,
-      .education,
-      .experience,
-      .recommendation,
-      .blockLeft__skills,
-      .blockLeft__paragraph{
-          padding:$oneEm;
-      }
-      
-      @include forMobile{
+    @include forMobile{
         width: 100%;
         display: block;
         border: none;
@@ -112,7 +112,7 @@ body{
         color: $h2Bg;
     }
 
-    .fab{
+    .fab, .fa-music, .fa-running, .fa-camera-retro{
         font-size: 25px;
         color: $h2Bg;
         border: 2px solid $h2Bg;
@@ -120,31 +120,15 @@ body{
         border-radius: 50px;
         cursor: pointer;
             &:hover{
-                color: $firstColor;
+                color: $whiteColor;
             }
     }
-    .fa-linkedin{
-        &:hover{
-            color: #0e76a8;
-        }
-    }
-    .fa-facebook{
-        &:hover{
-            color: #3b5998;
-        }
-    }
+   
 
-    .fa-instagram{
-        &:hover{
-            color: #3f729b;
-        }
-    }
-
-    &__skills{
+    &__hobbies{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-    
     }
    
     @include forMobile{
@@ -174,15 +158,27 @@ body{
         font-size: 12px;
         color: $greyColor;
         font-weight: bold;
+        @include forMobile{
+            color: $secondColor;
+        }
     }
     h4{
         font-size: 11px;
         color: $greyColor;
+        @include forMobile{
+            color: $thirdColor;
+        }
     }
     p{
         font-family: 'Times New Roman', Times, serif;
         font-size: 10px;
         color: $greyColor;
+    }
+    .p{
+        margin-left: 20px;
+        @include forMobile{
+            margin: auto;
+        }
     }
 
     .fa-suitcase, .fa-pencil-alt, .fa-award{
@@ -225,14 +221,12 @@ body{
             display: block;
             padding: 0.5em;
             border: 1px solid rgba(245,245,245 ,1);
-            background-color: ($secondColor, 10%);
             border-radius: 5px;
             box-shadow: 1px 1px $firstColor;
             cursor: pointer;
             &:hover{
                 box-shadow: 1px 2px $firstColor;
-            }
-            
+            }   
         }
     
         header{
@@ -253,7 +247,10 @@ body{
             justify-content: space-between;
             margin: 10px;
             .educationLeft{
-                width: 50%;
+                width: 60%;
+            }
+            @include forMobile{
+                display: block;
             }
         }
     }
@@ -265,10 +262,28 @@ body{
             justify-content: space-between;
             margin: 10px;
             .experienceLeft{
-                width: 50%;
+                width: 60%;
+            }
+            @include forMobile{
+                display: block;
             }
         }
     }
+    .list-style:before, .list-style-double-circle:before{
+        content: ''; 
+        border: 4px solid $firstColor;
+        border-radius: 100%;
+        font-size: 0.2em;
+        float: left;
+      @include forMobile{
+          display:none;
+      }
+  }
+  .list-style-double-circle:before{
+    padding: 0.6em;
+    border: 2px solid $firstColor;
+    background-color: $whiteColor;
+  }
 
 }
 
@@ -277,13 +292,12 @@ body{
 .recommendation{ // section recommendations
     height: auto;
     ul{
-
         display: flex;
         justify-content: space-around;
-        li{
-            padding: $oneEm;
-            color: grey;
-        }
+    }
+    li{
+        padding: $oneEm;
+        color: grey;
     }
 }
 
