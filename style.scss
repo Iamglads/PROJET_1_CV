@@ -111,8 +111,23 @@ li{
     &__paragraph{
         color: $h2Bg;
     }
-
     .fab, .fa-music, .fa-running, .fa-camera-retro{
+        font-size: 25px;
+        color: $h2Bg;
+        border: 2px solid $h2Bg;
+        padding: 0.2em;
+        border-radius: 50px;
+        cursor: pointer;
+            &:hover{
+                color: $whiteColor;
+            }
+        @include forMobile{
+            color: $firstColor;
+            border: 2px solid $firstColor;
+            }
+    }
+
+    .fab{
         font-size: 25px;
         color: $h2Bg;
         border: 2px solid $h2Bg;
@@ -246,12 +261,13 @@ li{
             display: flex;
             justify-content: space-between;
             margin: 10px;
-            .educationLeft{
-                width: 60%;
-            }
             @include forMobile{
                 display: block;
             }
+        }
+        .educationLeft{
+            width: 60%;
+            display: flex;
         }
     }
 
@@ -261,29 +277,29 @@ li{
             display: flex;
             justify-content: space-between;
             margin: 10px;
-            .experienceLeft{
-                width: 60%;
-            }
             @include forMobile{
                 display: block;
             }
         }
     }
-    .list-style:before, .list-style-double-circle:before{
-        content: ''; 
-        border: 4px solid $firstColor;
-        border-radius: 100%;
-        font-size: 0.2em;
-        float: left;
+    .experienceLeft{
+        width: 60%;
+        display: flex;
+    }
+    .fa-dot-circle, .fa-circle{
+        color: $firstColor;
       @include forMobile{
           display:none;
       }
   }
-  .list-style-double-circle:before{
-    padding: 0.6em;
-    border: 2px solid $firstColor;
-    background-color: $whiteColor;
+  .fa-dot-circle{
+    font-size: 0.6em;
   }
+
+  .fa-circle{
+    font-size: 0.5em;
+  }
+
 
 }
 
