@@ -112,6 +112,23 @@ header,
 .blockLeft .fab:hover, .blockLeft .fa-music:hover, .blockLeft .fa-running:hover, .blockLeft .fa-camera-retro:hover {
   color: white;
 }
+@media screen and (max-width: 599px) {
+  .blockLeft .fab, .blockLeft .fa-music, .blockLeft .fa-running, .blockLeft .fa-camera-retro {
+    color: #0097a7;
+    border: 2px solid #0097a7;
+  }
+}
+.blockLeft .fab {
+  font-size: 25px;
+  color: #263238;
+  border: 2px solid #263238;
+  padding: 0.2em;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.blockLeft .fab:hover {
+  color: white;
+}
 .blockLeft__hobbies {
   display: flex;
   justify-content: center;
@@ -233,13 +250,14 @@ header,
   justify-content: space-between;
   margin: 10px;
 }
-.blockRight .education ul .educationLeft {
-  width: 60%;
-}
 @media screen and (max-width: 599px) {
   .blockRight .education ul {
     display: block;
   }
+}
+.blockRight .education .educationLeft {
+  width: 60%;
+  display: flex;
 }
 .blockRight .experience {
   height: auto;
@@ -249,30 +267,28 @@ header,
   justify-content: space-between;
   margin: 10px;
 }
-.blockRight .experience ul .experienceLeft {
-  width: 60%;
-}
 @media screen and (max-width: 599px) {
   .blockRight .experience ul {
     display: block;
   }
 }
-.blockRight .list-style:before, .blockRight .list-style-double-circle:before {
-  content: "";
-  border: 4px solid #0097a7;
-  border-radius: 100%;
-  font-size: 0.2em;
-  float: left;
+.blockRight .experienceLeft {
+  width: 60%;
+  display: flex;
+}
+.blockRight .fa-dot-circle, .blockRight .fa-circle {
+  color: #0097a7;
 }
 @media screen and (max-width: 599px) {
-  .blockRight .list-style:before, .blockRight .list-style-double-circle:before {
+  .blockRight .fa-dot-circle, .blockRight .fa-circle {
     display: none;
   }
 }
-.blockRight .list-style-double-circle:before {
-  padding: 0.6em;
-  border: 2px solid #0097a7;
-  background-color: white;
+.blockRight .fa-dot-circle {
+  font-size: 0.6em;
+}
+.blockRight .fa-circle {
+  font-size: 0.5em;
 }
 
 .recommendation {
