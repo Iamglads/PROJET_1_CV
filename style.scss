@@ -42,7 +42,10 @@ h4{
     font-size: 25px;
     margin-right: 10px;
 }
-hr{ //divider section
+.divider{ //divider section
+    width: 100%;
+    height: 1px;
+    background: $secondColor;
     color: $firstColor;
 }
 
@@ -199,7 +202,8 @@ li{
         }
         .headerDivider{ // trait
             width: 50px;
-            color: $secondColor;
+            height: 2px;
+            background: $secondColor;
             margin-top: 0.8em;
             @include forMobile{
                 margin-bottom: 1em;

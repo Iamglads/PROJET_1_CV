@@ -34,7 +34,10 @@ h4 {
   margin-right: 10px;
 }
 
-hr {
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #0494a7;
   color: #0097a7;
 }
 
@@ -196,7 +199,8 @@ header, .education, .experience, .recommendation, .blockLeft__hobbies, .blockLef
 }
 .blockRight header .headerDivider {
   width: 50px;
-  color: #0494a7;
+  height: 2px;
+  background: #0494a7;
   margin-top: 0.8em;
 }
 @media screen and (max-width: 599px) {
