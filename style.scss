@@ -16,25 +16,31 @@ $breakpoint:(
     margin: 0;
     padding: 0;
 }
-
 body{
     display: flex;
     justify-content: center;
     background-color: white;
 }
 
-/*-----------------------------------
-            GENERAL
-------------------------------------*/
-.fas{ //Icones
-    font-size: 25px;
-    margin-right: 10px;
+/*--------GENERAL---------*/
+h1{
+    font-size: 20px;
 }
 h2{
     color: $firstColor;
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 20px;
+}
+h3{
+    font-size: 12px;
+}
+h4{
+    font-size: 11px;
+}
+.fas{ //Icones
+    font-size: 25px;
+    margin-right: 10px;
 }
 hr{ //divider section
     color: $firstColor;
@@ -45,12 +51,7 @@ li{
   }
 
  // padding de 1em
- header,
- .education,
- .experience,
- .recommendation,
- .blockLeft__hobbies,
- .blockLeft__paragraph{
+ header,.education,.experience,.recommendation,.blockLeft__hobbies,.blockLeft__paragraph{
      padding:$oneEm;
  }
   
@@ -58,21 +59,18 @@ li{
     width: 70%;
     height: auto;
     display: flex;
-    box-shadow: 2px 4px 2px rgb(195, 194, 194);
-    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(195, 194, 194);
+    border-radius: 20px;
     @include forMobile{
         width: 100%;
         display: block;
-        border: none;
       }
       @include forTablet{
           width: 100%;
       }
 }
 
-/*-----------------------------------
-            left side
-------------------------------------*/
+/*------left side-------*/
 .blockLeft{
     background-color: $secondColor;
     width: 30%;
@@ -139,7 +137,6 @@ li{
             }
     }
    
-
     &__hobbies{
         display: flex;
         justify-content: center;
@@ -150,27 +147,20 @@ li{
         width:100%;
         height: auto;
         position: relative;
-        margin-top: 100px;   
+        margin-top: 120px;   
         padding-top: $oneEm;
         background: linear-gradient($secondColor, $whiteColor);
     }
 }
 
-/*-----------------------------------
-            right side
-------------------------------------*/
-
+/*-----------right side---------*/
 .blockRight{
     width: 70%;
     margin-top: 2%;
     span{
         color: $secondColor;
     }
-    h1{
-        font-size: 20px;
-    }
     h3{
-        font-size: 12px;
         color: $greyColor;
         font-weight: bold;
         @include forMobile{
@@ -178,7 +168,6 @@ li{
         }
     }
     h4{
-        font-size: 11px;
         color: $greyColor;
         @include forMobile{
             color: $thirdColor;
@@ -211,18 +200,20 @@ li{
         .headerDivider{ // trait
             width: 50px;
             color: $secondColor;
-            margin-top: 0.5em;
+            margin-top: 0.8em;
+            @include forMobile{
+                margin-bottom: 1em;
+            }
         }
 
         @include forMobile{
             width: 100%;
             box-sizing: border-box;
-            height: 100px;
+            height: auto;
             margin-top:0px;
             top: 0px;
             left: 0px;
             position: absolute;
-            box-shadow: 0 2px 0 grey;
             .name{
                 font-size:1.5em;
             }
@@ -300,11 +291,7 @@ li{
     font-size: 0.5em;
   }
 
-
 }
-
-
-
 .recommendation{ // section recommendations
     height: auto;
     ul{
