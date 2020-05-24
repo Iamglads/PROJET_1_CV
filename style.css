@@ -68,6 +68,10 @@ header, .education, .experience, .recommendation, .blockLeft__hobbies, .blockLef
   }
 }
 
+.icon {
+  width: 10%;
+}
+
 /*------left side-------*/
 .blockLeft {
   background-color: #0494a7;
@@ -250,7 +254,7 @@ header, .education, .experience, .recommendation, .blockLeft__hobbies, .blockLef
 }
 .blockRight .education ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 10px;
 }
 @media screen and (max-width: 599px) {
@@ -259,15 +263,30 @@ header, .education, .experience, .recommendation, .blockLeft__hobbies, .blockLef
   }
 }
 .blockRight .education .educationLeft {
-  width: 60%;
+  margin-right: 30px;
+  width: 30%;
   display: flex;
+}
+@media screen and (max-width: 599px) {
+  .blockRight .education .educationLeft {
+    width: 100%;
+  }
+}
+.blockRight .education .educationRight {
+  width: 70%;
+  text-align: left;
+}
+@media screen and (max-width: 599px) {
+  .blockRight .education .educationRight {
+    width: 100%;
+  }
 }
 .blockRight .experience {
   height: auto;
 }
 .blockRight .experience ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 10px;
 }
 @media screen and (max-width: 599px) {
@@ -276,8 +295,24 @@ header, .education, .experience, .recommendation, .blockLeft__hobbies, .blockLef
   }
 }
 .blockRight .experienceLeft {
-  width: 60%;
+  width: 30%;
+  margin-right: 30px;
   display: flex;
+  text-align: left;
+}
+@media screen and (max-width: 599px) {
+  .blockRight .experienceLeft {
+    width: 100%;
+  }
+}
+.blockRight .experienceRight {
+  width: 70%;
+  text-align: left;
+}
+@media screen and (max-width: 599px) {
+  .blockRight .experienceRight {
+    width: 100%;
+  }
 }
 .blockRight .fa-dot-circle, .blockRight .fa-circle {
   color: #0097a7;
@@ -299,7 +334,7 @@ header, .education, .experience, .recommendation, .blockLeft__hobbies, .blockLef
 }
 .recommendation ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .recommendation li {
   padding: 1em;

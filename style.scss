@@ -73,6 +73,10 @@ li{
       }
 }
 
+.icon{
+    width: 10%;
+}
+
 /*------left side-------*/
 .blockLeft{
     background-color: $secondColor;
@@ -254,15 +258,26 @@ li{
         height: auto;
         ul{
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             margin: 10px;
             @include forMobile{
                 display: block;
             }
         }
         .educationLeft{
-            width: 60%;
+            margin-right: 30px;
+            width: 30%;
             display: flex;
+            @include forMobile{
+                width: 100%;
+            }
+        }
+        .educationRight{
+            width: 70%;
+            text-align: left;
+            @include forMobile{
+                width: 100%;
+            }
         }
     }
 
@@ -270,7 +285,7 @@ li{
         height: auto;
         ul{
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             margin: 10px;
             @include forMobile{
                 display: block;
@@ -278,8 +293,20 @@ li{
         }
     }
     .experienceLeft{
-        width: 60%;
+        width: 30%;
+        margin-right: 30px;
         display: flex;
+        text-align: left;
+        @include forMobile{
+            width: 100%;
+        }
+    }
+    .experienceRight{
+        width: 70%;
+        text-align: left;
+        @include forMobile{
+            width: 100%;
+        }
     }
     .fa-dot-circle, .fa-circle{
         color: $firstColor;
@@ -300,7 +327,7 @@ li{
     height: auto;
     ul{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     li{
         padding: $oneEm;
