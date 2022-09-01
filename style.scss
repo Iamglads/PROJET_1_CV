@@ -13,30 +13,32 @@ $breakpoint:(
 @import "./mixins.scss";
 
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-}
-body{
-    display: flex;
-    justify-content: center;
-    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /*--------GENERAL---------*/
 h1{
-    font-size: 20px;
+    font-size: 18px;
 }
 h2{
-    color: $firstColor;
-    font-weight: bold;
+    color: $whiteColor;
+    font-weight: 500;
     font-size: 18px;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 h3{
     font-size: 12px;
 }
 h4{
     font-size: 11px;
+}
+p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
 }
 .fas{ //Icones
     font-size: 25px;
@@ -47,30 +49,54 @@ h4{
     height: 1px;
     background: $secondColor;
     color: $firstColor;
+    @include forMobile {
+        display: none;
+    }
 }
 
 li{
     list-style-type: none;
-  }
+}
+
+a {
+    color: inherit;
+    color: $firstColor;
+    text-decoration: none;
+}
 
  // padding de 1em
- header,.education,.experience,.recommendation,.blockLeft__hobbies,.blockLeft__paragraph{
+ header, 
+ footer, 
+ .education,
+ .experience,
+ .recommendation,
+ .blockLeft__hobbies,
+ .blockLeft__paragraph, 
+ .presentation{
      padding:$oneEm;
  }
   
 .container{
-    width: 70%;
+    width: 100%;
     height: auto;
     display: flex;
-    box-shadow: 2px 2px 2px rgb(195, 194, 194);
-    border-radius: 20px;
-    @include forMobile{
-        width: 100%;
-        display: block;
-      }
-      @include forTablet{
-          width: 100%;
-      }
+    justify-content: center;
+    padding: $oneEm;
+    .wrappe {
+        max-width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        @include forMobile{
+            width: 100%;
+            display: block;
+          }
+          @include forTablet{
+              width: 100%;
+          }
+    }
+    @include forMobile {
+        padding: 0;
+    }
 }
 
 .icon{
@@ -80,18 +106,20 @@ li{
 /*------left side-------*/
 .blockLeft{
     background-color: $secondColor;
-    width: 30%;
-    height: auto;
+    min-height: 97vh;
+    flex: 1;
     &__img{
         display: flex;
         justify-content: center;
         margin-bottom: 5px;
+        padding: $oneEm;
         img{
         border-radius: 100%;
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
             &:hover{
-                border: 2px solid white;
+                border: 1px solid white;
             }
         }
     }
@@ -99,49 +127,27 @@ li{
     &__heading{
         background-color: $h2Bg;
         text-align: center;
-        padding: 0.2em;
-        border-radius: 5px;
+        padding: 0.5em;
             &:hover{
                 color: white;
             }
     }
-    .blockLeft__ul{
+    ul{
         padding: $oneEm;
     }
     li{
         margin-bottom: 20px;
-        color: $h2Bg;
+
     }
 
-    &__paragraph{
-        color: $h2Bg;
+    p{
+        color: $whiteColor;
     }
-    .fab, .fa-music, .fa-running, .fa-camera-retro{
-        font-size: 25px;
-        color: $h2Bg;
-        border: 2px solid $h2Bg;
-        padding: 0.2em;
-        border-radius: 50px;
-        cursor: pointer;
-            &:hover{
-                color: $whiteColor;
-            }
-        @include forMobile{
-            color: $firstColor;
-            border: 2px solid $firstColor;
-            }
-    }
+ 
 
     .fab{
-        font-size: 25px;
-        color: $h2Bg;
-        border: 2px solid $h2Bg;
-        padding: 0.2em;
-        border-radius: 50px;
-        cursor: pointer;
-            &:hover{
-                color: $whiteColor;
-            }
+        font-size: 20px;
+        color: $whiteColor;
     }
    
     &__hobbies{
@@ -151,19 +157,15 @@ li{
     }
    
     @include forMobile{
-        width:100%;
-        height: auto;
-        position: relative;
-        margin-top: 120px;   
+        flex: 1;
         padding-top: $oneEm;
-        background: linear-gradient($secondColor, $whiteColor);
+        height: auto;
     }
 }
 
 /*-----------right side---------*/
 .blockRight{
-    width: 70%;
-    margin-top: 2%;
+    flex: 3;
     span{
         color: $secondColor;
     }
@@ -174,6 +176,9 @@ li{
             color: $secondColor;
         }
     }
+    h2 {
+        color: $firstColor;
+    }
     h4{
         color: $greyColor;
         @include forMobile{
@@ -181,8 +186,6 @@ li{
         }
     }
     p{
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 10px;
         color: $greyColor;
     }
     .p{
@@ -218,10 +221,6 @@ li{
             width: 100%;
             box-sizing: border-box;
             height: auto;
-            margin-top:0px;
-            top: 0px;
-            left: 0px;
-            position: absolute;
             .name{
                 font-size:1.5em;
             }
@@ -254,7 +253,15 @@ li{
         }
     }
 
-    .education{ //section education
+    .presentation {
+        li{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 10px;
+            color: $greyColor;
+        }
+    }
+
+    .education, .experience{ //section education
         height: auto;
         ul{
             display: flex;
@@ -264,16 +271,19 @@ li{
                 display: block;
             }
         }
-        .educationLeft{
+        .educationLeft, .experienceLeft{
             margin-right: 30px;
-            width: 30%;
+            flex: 1;
             display: flex;
+            align-items: flex-start;
+            justify-content: start;
             @include forMobile{
                 width: 100%;
+                margin-bottom: 10px;
             }
         }
-        .educationRight{
-            width: 70%;
+        .educationRight, .experienceRight{
+            flex: 3;
             text-align: left;
             @include forMobile{
                 width: 100%;
@@ -281,33 +291,7 @@ li{
         }
     }
 
-    .experience{ //section experience
-        height: auto;
-        ul{
-            display: flex;
-            justify-content: flex-start;
-            margin: 10px;
-            @include forMobile{
-                display: block;
-            }
-        }
-    }
-    .experienceLeft{
-        width: 30%;
-        margin-right: 30px;
-        display: flex;
-        text-align: left;
-        @include forMobile{
-            width: 100%;
-        }
-    }
-    .experienceRight{
-        width: 70%;
-        text-align: left;
-        @include forMobile{
-            width: 100%;
-        }
-    }
+
     .fa-dot-circle, .fa-circle{
         color: $firstColor;
       @include forMobile{
@@ -324,15 +308,10 @@ li{
 
 }
 .recommendation{ // section recommendations
-    height: auto;
-    ul{
-        display: flex;
-        justify-content: space-between;
-    }
-    li{
-        padding: $oneEm;
-        color: grey;
-    }
+   ul {
+    padding: $oneEm;
+   }
+
 }
 
 footer{
