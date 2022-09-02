@@ -14,7 +14,6 @@ h2 {
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 20px;
-  text-transform: uppercase;
 }
 
 h3 {
@@ -71,7 +70,7 @@ header,
 footer,
 .education,
 .experience,
-.recommendation,
+.achievements,
 .blockLeft__hobbies,
 .blockLeft__paragraph,
 .presentation {
@@ -132,6 +131,14 @@ footer,
 .blockLeft__img img:hover {
   border: 1px solid white;
 }
+.blockLeft__img .infoBox {
+  display: none;
+}
+@media screen and (max-width: 599px) {
+  .blockLeft__img .infoBox {
+    display: block;
+  }
+}
 .blockLeft__heading {
   background-color: #263238;
   text-align: center;
@@ -160,9 +167,11 @@ footer,
 }
 @media screen and (max-width: 599px) {
   .blockLeft {
-    flex: 1;
-    padding-top: 1em;
-    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -900px;
+    padding-top: 0;
   }
 }
 
@@ -207,11 +216,21 @@ footer,
 .blockRight .fa-suitcase, .blockRight .fa-pencil-alt, .blockRight .fa-award {
   color: #0494a7;
 }
-.blockRight header .name {
-  font-size: 2em;
+.blockRight header {
+  width: 100%;
 }
-.blockRight header p {
-  font-size: 1em;
+.blockRight header .blockRight__infoBox img {
+  width: 30px;
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 599px) {
+  .blockRight header .blockRight__infoBox img {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 }
 .blockRight header .headerDivider {
   width: 50px;
@@ -224,15 +243,10 @@ footer,
     margin-bottom: 1em;
   }
 }
-@media screen and (max-width: 599px) {
-  .blockRight header {
-    width: 100%;
-    box-sizing: border-box;
-    height: auto;
-  }
-  .blockRight header .name {
-    font-size: 1.5em;
-  }
+.blockRight header li {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10px;
+  color: #6b6868;
 }
 @media screen and (max-width: 599px) {
   .blockRight {
@@ -250,17 +264,6 @@ footer,
   .blockRight ul:hover {
     box-shadow: 1px 2px #0097a7;
   }
-  .blockRight header .name {
-    font-size: 1.5em;
-  }
-  .blockRight header p {
-    font-size: 0.8em;
-  }
-}
-.blockRight .presentation li {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 10px;
-  color: #6b6868;
 }
 .blockRight .education, .blockRight .experience {
   height: auto;
@@ -281,6 +284,16 @@ footer,
   display: flex;
   align-items: flex-start;
   justify-content: start;
+}
+@media screen and (max-width: 599px) {
+  .blockRight .education .educationLeft, .blockRight .education .experienceLeft, .blockRight .experience .educationLeft, .blockRight .experience .experienceLeft {
+    display: block;
+  }
+}
+@media screen and (max-width: 599px) {
+  .blockRight .education .educationLeft span, .blockRight .education .experienceLeft span, .blockRight .experience .educationLeft span, .blockRight .experience .experienceLeft span {
+    display: none;
+  }
 }
 @media screen and (max-width: 599px) {
   .blockRight .education .educationLeft, .blockRight .education .experienceLeft, .blockRight .experience .educationLeft, .blockRight .experience .experienceLeft {
@@ -312,8 +325,12 @@ footer,
   font-size: 0.5em;
 }
 
-.recommendation ul {
+.achievements ul {
   padding: 1em;
+}
+.achievements ul li {
+  color: #6b6868;
+  font-size: 12px;
 }
 
 footer {

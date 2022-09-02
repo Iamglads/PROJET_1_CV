@@ -27,7 +27,6 @@ h2{
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 20px;
-    text-transform: uppercase;
 }
 h3{
     font-size: 12px;
@@ -76,7 +75,7 @@ a {
  footer, 
  .education,
  .experience,
- .recommendation,
+ .achievements,
  .blockLeft__hobbies,
  .blockLeft__paragraph, 
  .presentation{
@@ -129,6 +128,13 @@ a {
                 border: 1px solid white;
             }
         }
+
+        .infoBox {
+            display: none;
+            @include forMobile {
+                display: block;
+            }
+        }
     }
     
     &__heading{
@@ -164,9 +170,11 @@ a {
     }
    
     @include forMobile{
-        flex: 1;
-        padding-top: $oneEm;
-        height: auto;
+        width: 100%;
+       position: absolute;
+       top: 0;
+       left: -900px;
+        padding-top: 0;
     }
 }
 
@@ -207,12 +215,19 @@ a {
     }
 
     header{
-        .name{
-            font-size: 2em;
-        }
-    
-        p{
-            font-size: $oneEm;
+        width: 100%;
+        .blockRight__infoBox {
+            img {
+                width: 30px;
+                display: none;
+                cursor: pointer;
+                @include forMobile {
+                    display: block;
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                }
+            }
         }
         .headerDivider{ // trait
             width: 50px;
@@ -224,14 +239,12 @@ a {
             }
         }
 
-        @include forMobile{
-            width: 100%;
-            box-sizing: border-box;
-            height: auto;
-            .name{
-                font-size:1.5em;
-            }
+        li{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 10px;
+            color: $greyColor;
         }
+   
     }
     @include forMobile{
         width:100%;
@@ -249,24 +262,9 @@ a {
             }   
         }
     
-        header{
-            .name{
-                font-size: 1.5em;
-            }
-        
-            p{
-                font-size: 0.8em;
-            }
-        }
+
     }
 
-    .presentation {
-        li{
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 10px;
-            color: $greyColor;
-        }
-    }
 
     .education, .experience{ //section education
         height: auto;
@@ -284,6 +282,14 @@ a {
             display: flex;
             align-items: flex-start;
             justify-content: start;
+            @include forMobile {
+                display: block;
+            }
+            span {
+                @include forMobile {
+                    display: none;
+                }
+            }
             @include forMobile{
                 width: 100%;
                 margin-bottom: 10px;
@@ -314,9 +320,13 @@ a {
   }
 
 }
-.recommendation{ // section recommendations
+.achievements{ // section achievementss
    ul {
     padding: $oneEm;
+    li {
+        color: $greyColor;
+        font-size: 12px;
+    }
    }
 
 }
