@@ -64,6 +64,13 @@ a {
     text-decoration: none;
 }
 
+.name-mobile, .title-mobile {
+    display: none;
+    @include forMobile {
+        display: block;
+    }
+}
+
  // padding de 1em
  header, 
  footer, 
