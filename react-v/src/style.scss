@@ -1,0 +1,77 @@
+// VARIABLES
+$firstColor:#eb2f64;
+$secondColor:rgb(4, 148, 167);
+$thirdColor:rgba(20, 110, 122, 0.664);
+$h2Bg:rgba(38,50,56 ,1);
+$greyColor:rgb(107, 104, 104);
+$oneEm:1em;
+$whiteColor:white;
+$breakpoint:(
+    mobile:599px,
+    tablet:769px
+);
+
+@import "./mixins.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+    @media only screen and (max-width: 1200px) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    min-height: 100vh;
+    color: #FFF;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right bottom, #FF3366, #BA265D);
+}
+
+
+/*--------GENERAL---------*/
+h1{
+    font-size: 18px;
+}
+h2{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+h3{
+    font-size: 12px;
+}
+h4{
+    font-size: 11px;
+}
+p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

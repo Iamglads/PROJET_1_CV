@@ -1,0 +1,19 @@
+.app {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    &__wrappe {
+       max-width: 1200px;
+        width: 100%;
+        display: flex;
+        margin: 60px;
+    }
+    &__content {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 2em;
+        background-image: linear-gradient(to left top, #000000, #3b3b3b, #767676, #b8b8b8, #fefefe);
+    }
+}
