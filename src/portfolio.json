@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "title": "Ohmyfood",
+        "langages": ["HTML", "CSS", "SASS"],
+        "image": "./assets/images/ohmyfood.png",
+        "url" : "https://ag-ohmyfood.netlify.app/",
+        "source": "https://iamglads.github.io/projet_3_ohmyfood/",
+        "description" : "Intégration de maquette, animation CSS"
+    },
+    {
+        "id": 2,
+        "title": "Kasa",
+        "langages": ["React"],
+        "image": "./assets//images/kasa.png",
+        "url": "https://kaza-gladston-aristoverne.netlify.app/",
+        "source": "https://github.com/Iamglads/Kasa.git",
+        "description" : "Application React mettant en pratique les fondamentaux du framework."
+    },
+
+    {
+        "id": 3,
+        "title": "Groupomania",
+        "langages": ["Vue js", "Express", "MySql"],
+        "image": "./assets/images/fisheye.png",
+        "url": "https://github.com/Iamglads/projet_7_Groupomania",
+        "source": "https://github.com/Iamglads/projet_7_Groupomania",
+        "description" : "Application réseau social d'une entreprise."
+    },
+
+    {
+        "id": 4,
+        "title": "FishEye",
+        "langages": ["Javascript"],
+        "image": "./assets/images/fisheye.png",
+        "url": "https://ga-fisheye.netlify.app/index.html",
+        "source": "https://github.com/Iamglads/Fisheye.git",
+        "description" : "Application de photographes"
+    },
+    {
+        "id": 5,
+        "title": "Quentin Chantrel",
+        "langages": ["WordPress"],
+        "image": "./images/fisheye.png",
+        "url": "https://quentinchantrel.com/",
+        "source": "",
+        "description" : "Portfolio d'un réalisateur intégré dans WordPress avec le Builder de page Elementor."
+    },
+    {
+        "id": 6,
+        "title": "AJ Loc & Services",
+        "langages": ["WordPress", "Woocommerce"],
+        "image": "./images/fisheye.png",
+        "url": "https://www.ajlocationetservices.fr/",
+        "source": "",
+        "description" : "Le site e-commerce d'une entreprise intégré dans WordPress avec le Builder de page Elementor."
+    }
+]

@@ -5,6 +5,7 @@ import {
   Education,
   Apropos,
   Experiences,
+  Error,
 } from "./components";
 import "./App.scss";
 
@@ -15,16 +16,11 @@ function App() {
         <Sidebar />
         <div className="app__content">
           <Routes>
+            <Route index path="/a-propos" element={<Apropos />} />
             <Route path="/realisations" element={<Realisations />} />
-          </Routes>
-          <Routes>
-            <Route path="/a-propos" element={<Apropos />} />
-          </Routes>
-          <Routes>
             <Route path="/education" element={<Education />} />
-          </Routes>
-          <Routes>
             <Route path="/experiences" element={<Experiences />} />
+            <Route path="*" element={<Error />} />
           </Routes>
         </div>
       </div>

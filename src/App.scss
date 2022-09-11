@@ -1,5 +1,5 @@
 .app {
-    min-height: 90vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     &__wrappe {
@@ -7,13 +7,17 @@
         width: 100%;
         display: flex;
         margin: 60px;
+        align-self: stretch;
+        background: linear-gradient(145deg, #cacaca, #f0f0f0);
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
     }
     &__content {
         width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        padding: 2em;
-        background-image: linear-gradient(to left top, #000000, #3b3b3b, #767676, #b8b8b8, #fefefe);
+        padding: 4em;
+        background: #767676;
     }
 }

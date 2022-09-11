@@ -1,0 +1,13 @@
+.achievements {
+    .divider-heading {
+        height: 2px;
+        width: 50px;
+        background: #eb2f64;
+    }
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

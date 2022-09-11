@@ -1,17 +1,7 @@
-// VARIABLES
-$firstColor:#eb2f64;
-$secondColor:rgb(4, 148, 167);
-$thirdColor:rgba(20, 110, 122, 0.664);
-$h2Bg:rgba(38,50,56 ,1);
-$greyColor:rgb(107, 104, 104);
-$oneEm:1em;
-$whiteColor:white;
-$breakpoint:(
-    mobile:599px,
-    tablet:769px
-);
 
-@import "./mixins.scss";
+
+
+@import "./sass/mixins.scss";
 
 * {
     margin: 0;
@@ -41,18 +31,22 @@ body {
     color: #FFF;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to right bottom, #FF3366, #BA265D);
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  20px 20px 60px #bebebe,
+                 -20px -20px 60px #ffffff;
+              
 }
 
 
 /*--------GENERAL---------*/
 h1{
     font-size: 18px;
+    font-weight: 200;
 }
 h2{
-    font-weight: 500;
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-weight: 200;
+    font-size: 20px; 
+    letter-spacing: 10px;
 }
 h3{
     font-size: 12px;
@@ -61,14 +55,16 @@ h4{
     font-size: 11px;
 }
 p {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 300;
-    line-height: 18px;
+    line-height: 20px;
+    letter-spacing: 2px;
 }
 
 
 li{
     list-style-type: none;
+    letter-spacing: 2px;
 }
 
 a {

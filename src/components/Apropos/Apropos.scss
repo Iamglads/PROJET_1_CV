@@ -1,0 +1,24 @@
+.about {
+    .divider-heading {
+        height: 2px;
+        width: 50px;
+        background: #eb2f64;
+        margin: 2rem 0;
+    }
+    &__content {
+        max-width: 500px;
+    }
+
+    &__stack {
+       margin-top: 60px;
+       &--icons {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+       }
+       .fab {
+        font-size: 30px;
+        margin-right: 20px;
+       }
+    }
+}

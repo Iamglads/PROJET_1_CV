@@ -4,5 +4,14 @@ import Footer from "./Footer/Footer";
 import Realisations from "./Realisations/Realisations";
 import Sidebar from "./Sidebar/Sidebar";
 import Experiences from "./Experiences/Experiences";
+import Error from "./Experiences/Experiences";
 
-export { Apropos, Education, Footer, Realisations, Sidebar, Experiences };
+export {
+  Apropos,
+  Education,
+  Footer,
+  Realisations,
+  Sidebar,
+  Experiences,
+  Error,
+};
