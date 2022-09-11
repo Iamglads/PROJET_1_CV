@@ -2,8 +2,8 @@
     {
         "id": 1,
         "title": "Ohmyfood",
-        "langages": ["HTML", "CSS", "SASS"],
-        "image": "./assets/images/ohmyfood.png",
+        "langages": ["React", "Sass"],
+        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/ohmyfood.png?raw=true",
         "url" : "https://ag-ohmyfood.netlify.app/",
         "source": "https://iamglads.github.io/projet_3_ohmyfood/",
         "description" : "Intégration de maquette, animation CSS"
@@ -12,7 +12,7 @@
         "id": 2,
         "title": "Kasa",
         "langages": ["React"],
-        "image": "./assets//images/kasa.png",
+        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/kasa.png?raw=true",
         "url": "https://kaza-gladston-aristoverne.netlify.app/",
         "source": "https://github.com/Iamglads/Kasa.git",
         "description" : "Application React mettant en pratique les fondamentaux du framework."
@@ -22,7 +22,7 @@
         "id": 3,
         "title": "Groupomania",
         "langages": ["Vue js", "Express", "MySql"],
-        "image": "./assets/images/fisheye.png",
+        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/groupomania.png?raw=true",
         "url": "https://github.com/Iamglads/projet_7_Groupomania",
         "source": "https://github.com/Iamglads/projet_7_Groupomania",
         "description" : "Application réseau social d'une entreprise."
@@ -32,16 +32,16 @@
         "id": 4,
         "title": "FishEye",
         "langages": ["Javascript"],
-        "image": "./assets/images/fisheye.png",
+        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/fisheye.png?raw=true",
         "url": "https://ga-fisheye.netlify.app/index.html",
         "source": "https://github.com/Iamglads/Fisheye.git",
-        "description" : "Application de photographes"
+        "description" : "Application de photographes avec Javascript"
     },
     {
         "id": 5,
         "title": "Quentin Chantrel",
         "langages": ["WordPress"],
-        "image": "./images/fisheye.png",
+        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/qc.png?raw=true",
         "url": "https://quentinchantrel.com/",
         "source": "",
         "description" : "Portfolio d'un réalisateur intégré dans WordPress avec le Builder de page Elementor."
@@ -50,9 +50,9 @@
         "id": 6,
         "title": "AJ Loc & Services",
         "langages": ["WordPress", "Woocommerce"],
-        "image": "./images/fisheye.png",
+        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/ajloc.png?raw=true",
         "url": "https://www.ajlocationetservices.fr/",
         "source": "",
-        "description" : "Le site e-commerce d'une entreprise intégré dans WordPress avec le Builder de page Elementor."
+        "description" : "Le site e-commerce d'une entreprise, intégré dans WordPress avec le Builder de page Elementor."
     }
 ]

@@ -1,0 +1,19 @@
+.education {
+    max-width: 600px;
+    &__divider {
+        height: 2px;
+        width: 50px;
+        background: #eb2f64;
+        margin: 2em 0;
+    }
+   
+    &__formation {
+        .item {
+            margin-top: 10px;
+        }
+    }
+
+    &__skills {
+        margin-top: 60px;
+    }
+}

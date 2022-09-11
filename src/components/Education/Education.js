@@ -3,68 +3,55 @@ import React from "react";
 const Education = () => {
   return (
     <section className="education">
-      <h2 className="education__heading">
-        <i className="fas fa-award"></i> FORMATION
-      </h2>
-      <div className="education__divider"></div>
-      <ul>
-        <li className="educationLeft">
-          <span className="icon">
-            <i className="far fa-dot-circle"></i>
-          </span>
-          <div>
-            <p className="p">2019 - 2020</p>
-            <p className="p">Paris</p>
-          </div>
-        </li>
-        <li className="educationRight">
-          <h3>OPENclassNameROOMS</h3>
-          <h4>Développeur web</h4>
-          <p>
-            {" "}
-            J'ai suivi le parcours de développeur web junior. J'ai développé mes
-            compétences en intégration et en programmation web. Je me
-            perfectionne en Javascript et son Framework
-            <a href="https://vuejs.org/">Vue</a>
-          </p>
-        </li>
-      </ul>
-      <ul>
-        <li className="educationLeft">
-          <span className="icon">
-            <i className="fas fa-circle"></i>
-          </span>
-          <div>
-            <p className="p">2016 - 2017</p>
-            <p className="p"> Guyane</p>
-          </div>
-        </li>
-        <li className="educationRight">
-          <h3>UNIVERSITE DES ANTILLES - GUYANE</h3>
-          <h4>Licence Administration Economique et Sociale</h4>
-          <p>Micro Economie - Macro Economie - Entreprenariat</p>
-        </li>
-      </ul>
-      <ul>
-        <li className="educationLeft">
-          <span className="icon">
-            <i className="fas fa-circle"></i>
-          </span>
-          <div>
-            <p className="p">2013 - 2015</p>
-            <p className="p"> Guyane</p>
-          </div>
-        </li>
-        <li className="educationRight">
-          <h3>IUT DE KOUROU - GUYANE</h3>
-          <h4>Techniques de commercialisation</h4>
-          <p>
-            Durant ce cursus, j'ai développé des compétences dans le marketing
-            digital, la prospection et la commercialisation en B to B et la
-            négociation.
-          </p>
-        </li>
-      </ul>
+      <h2 className="education__heading">FORMATION</h2>
+      <div className="education__divider divider-heading"></div>
+      <div className="education__formation">
+        <ul>
+          <li className="item">
+            <div>
+              <p>2019 - 2020</p>
+              <p>Paris</p>
+            </div>
+          </li>
+          <li className="item">
+            <h3>Openclassrooms</h3>
+            <h4>Développeur web</h4>
+          </li>
+        </ul>
+        <ul>
+          <li className="item">
+            <div>
+              <p>2017</p>
+              <p>Guyane, France</p>
+            </div>
+          </li>
+          <li className="item">
+            <h3>Université de Guyane</h3>
+            <h4>Licence Administration Économique & Sociale</h4>
+          </li>
+        </ul>
+      </div>
+      <div className="education__skills">
+        <h2 className="education__heading">COMPÉTENCES</h2>
+        <div className="education__divider divider-heading"></div>
+        <ul>
+          <li className="item">
+            <p>Intégrer du contenu Web conformément à une maquette.</p>
+          </li>
+          <li className="item">
+            <p>Création/refonte de site multipages/ e-commerce.</p>
+          </li>
+          <li className="item">
+            <p>Implémenter des interfaces responsives.</p>
+          </li>
+          <li className="item">
+            <p> Développement d’application Frontal sur mesure.</p>
+          </li>
+          <li className="item">
+            <p>Optimiser le référencement naturel d'un site web.</p>
+          </li>
+        </ul>
+      </div>
     </section>
   );
 };

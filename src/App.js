@@ -16,7 +16,7 @@ function App() {
         <Sidebar />
         <div className="app__content">
           <Routes>
-            <Route index path="/a-propos" element={<Apropos />} />
+            <Route index path="/" element={<Apropos />} />
             <Route path="/realisations" element={<Realisations />} />
             <Route path="/education" element={<Education />} />
             <Route path="/experiences" element={<Experiences />} />
