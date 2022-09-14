@@ -34,6 +34,9 @@ const Realisations = () => {
     <section className="achievements">
       <h2> RÉALISATIONS</h2>
       <div className="achievements__divider divider-heading"></div>
+      <p className="achievements__note">
+        Mes réalisation en agence sur demande.
+      </p>
       <ul className="achievements__list">
         {projects.map((projects, index) => {
           return <Card data={projects} key={index} />;

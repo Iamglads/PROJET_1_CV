@@ -1,8 +1,13 @@
 .achievements {
+    max-height: 600px;
+    overflow: scroll;
     .divider-heading {
         height: 2px;
         width: 50px;
         background: #eb2f64;
+    }
+    &__note {
+        margin-top: 1em;
     }
     &__list {
         display: flex;

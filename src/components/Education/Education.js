@@ -9,8 +9,7 @@ const Education = () => {
         <ul>
           <li className="item">
             <div>
-              <p>2019 - 2020</p>
-              <p>Paris</p>
+              <p>Paris, 2019 - 2020</p>
             </div>
           </li>
           <li className="item">
@@ -21,8 +20,7 @@ const Education = () => {
         <ul>
           <li className="item">
             <div>
-              <p>2017</p>
-              <p>Guyane, France</p>
+              <p>Guyane, France - 2017</p>
             </div>
           </li>
           <li className="item">
@@ -34,22 +32,35 @@ const Education = () => {
       <div className="education__skills">
         <h2 className="education__heading">COMPÉTENCES</h2>
         <div className="education__divider divider-heading"></div>
+
         <ul>
           <li className="item">
-            <p>Intégrer du contenu Web conformément à une maquette.</p>
+            Intégrer du contenu conformément à une maquette (HTML, CSS, Sass,
+            Tailwind).
           </li>
           <li className="item">
-            <p>Création/refonte de site multipages/ e-commerce.</p>
+            Création de sites onepage, multipages WordPress / E-commerce
+            (Woocommerce).
+          </li>
+          <li className="item">Créer des animations CSS.</li>
+          <li className="item">
+            Maitrise Elementor Builder/Oxygen Builder, testé le builder
+            Breakdance dans sa version beta.
           </li>
           <li className="item">
-            <p>Implémenter des interfaces responsives.</p>
+            Utilisation d'ACF, Pods, Gravity Form, Woocommerce subscription ...
           </li>
           <li className="item">
-            <p> Développement d’application Frontal sur mesure.</p>
+            Implémenter des interfaces Responsives. Optimiser le référencement
           </li>
           <li className="item">
-            <p>Optimiser le référencement naturel d'un site web.</p>
+            Optimiser le référencement naturel des pages Web.
           </li>
+          <li className="item">
+            Développement d’application Javascript/React.
+          </li>
+          <li className="item">Versionner mon code avec Git.</li>
+          <li className="item">Gestion de projet Web.</li>
         </ul>
       </div>
     </section>
