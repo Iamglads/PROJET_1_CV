@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { ImAccessibility } from "react-icons/im";
 import { FaLinkedin } from "react-icons/fa";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
@@ -8,27 +8,30 @@ import {
   VscMortarBoard,
   VscGithubInverted,
 } from "react-icons/vsc";
+import { GrLocationPin } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import Image from "../../assets/images/glad.jpg";
 
-const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+import { AppContext } from "../../context/context";
 
-  const openMenuMobile = () => {
-    console.log("Open");
-    setIsOpen(!isOpen);
-  };
+const Sidebar = () => {
+  const { openSidebar, toggleMenu } = useContext(AppContext);
+
+  //console.log(openSidebar, toggleMenu);
 
   return (
     <>
-      <div className="sidebar__iconmenu" onClick={openMenuMobile}>
+      <div className="sidebar__iconmenu" onClick={toggleMenu}>
         <AiOutlineMenuUnfold className="icon" />
       </div>
-      {isOpen && (
+      {!openSidebar && (
         <nav className="sidebar">
           <div className="infobox">
             <img src={Image} alt="Gladston Aristoverne" />
             <h1 className="infobox__name">Gladston Aristoverne</h1>
+            <address>
+              <GrLocationPin className="infobox__icon" /> Montréal
+            </address>
           </div>
           <ul className="side-nav">
             <li className="side-nav__item">

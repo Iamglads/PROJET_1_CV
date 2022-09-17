@@ -50,15 +50,14 @@ const Education = () => {
           <li className="item">
             Utilisation d'ACF, Pods, Gravity Form, Woocommerce subscription ...
           </li>
-          <li className="item">
-            Implémenter des interfaces Responsives. Optimiser le référencement
-          </li>
+          <li className="item">Implémenter des interfaces Responsives.</li>
           <li className="item">
             Optimiser le référencement naturel des pages Web.
           </li>
           <li className="item">
             Développement d’application Javascript/React.
           </li>
+          <li className="item">Créer une application Node/Express basic.</li>
           <li className="item">Versionner mon code avec Git.</li>
           <li className="item">Gestion de projet Web.</li>
         </ul>

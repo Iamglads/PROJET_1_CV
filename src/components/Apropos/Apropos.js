@@ -5,17 +5,21 @@ const Apropos = () => {
   return (
     <section className="about">
       <div className="about__content">
-        <h2 className="about__content--heading">Qui suis-je ?</h2>
+        <h2 className="about__content--heading">Who am I?</h2>
         <div className="about__content--divider divider-heading"></div>
         <p className="about__content--paragraph">
-          Hello, je m’appelle Gladston, j’ai 25 ans et je vis en Guadeloupe. Je
-          me forme au métier de développeur web. C’est une passion découverte
-          durant ma période en entreprise. J’ai voulu mettre en place un site
-          web afin de placer mon entreprise au coeur d’une stratégie digital.
-          J’ai pris goût durant ce challenge personnel, j’ai décidé d’en faire
-          mon métier. J’aime apprendre de nouvelles choses que ce soit apprendre
-          à réparer une machine à laver ou apprendre un nouveau langage web, je
-          prends le même plaisir.
+          Salut, je m’appelle Glad. J’habite à Montréal. Je suis intégrateur,
+          développeur Web avec un fort intérêt pour le développement frontend.
+          Après ma formation de développeur Web chez Openclassrooms à Paris.
+          J’ai travaillé en tant que freelance en Guadeloupe. Je me suis occupé
+          de créer des sites pour des petites entreprises et associations.
+          Depuis mon arrivé au Québec je travaille en agence Web. Au quotidien
+          mon rôle est de créer des sites WordPress de nos clients et
+          d’optimiser le référencement des pages Webs. Ça va du site vitrine à
+          des sites un peu plus complexes et des sites e-commerce. En parallèle,
+          je continue à me perfectionner, à apprendre d’autres technologies,
+          créer des projets personnels afin de de m’orienter de plus en plus
+          vers le développement frontend pur.
         </p>
       </div>
 
