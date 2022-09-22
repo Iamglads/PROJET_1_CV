@@ -5,7 +5,7 @@ const Apropos = () => {
   return (
     <section className="about">
       <div className="about__content">
-        <h2 className="about__content--heading">Who am I?</h2>
+        <h2 className="about__content--heading">À PROPOS DE MOI</h2>
         <div className="about__content--divider divider-heading"></div>
         <p className="about__content--paragraph">
           Salut, je m’appelle Glad. J’habite à Montréal. Je suis intégrateur,

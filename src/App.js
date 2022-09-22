@@ -5,6 +5,7 @@ import {
   Education,
   Apropos,
   Experiences,
+  Contact,
   Error,
 } from "./components";
 import "./App.scss";
@@ -20,6 +21,7 @@ function App() {
             <Route path="/realisations" element={<Realisations />} />
             <Route path="/education" element={<Education />} />
             <Route path="/experiences" element={<Experiences />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </div>

@@ -4,6 +4,7 @@ import Footer from "./Footer/Footer";
 import Realisations from "./Realisations/Realisations";
 import Sidebar from "./Sidebar/Sidebar";
 import Experiences from "./Experiences/Experiences";
+import Contact from "./Contact/Contact";
 import Error from "./Error/Error";
 
 export {
@@ -14,4 +15,5 @@ export {
   Sidebar,
   Experiences,
   Error,
+  Contact,
 };

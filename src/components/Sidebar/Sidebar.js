@@ -8,6 +8,7 @@ import {
   VscMortarBoard,
   VscGithubInverted,
 } from "react-icons/vsc";
+import { FiMail } from "react-icons/fi";
 import { GrLocationPin } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import Image from "../../assets/images/glad.jpg";
@@ -29,9 +30,6 @@ const Sidebar = () => {
           <div className="infobox">
             <img src={Image} alt="Gladston Aristoverne" />
             <h1 className="infobox__name">Gladston Aristoverne</h1>
-            <address>
-              <GrLocationPin className="infobox__icon" /> Montréal
-            </address>
           </div>
           <ul className="side-nav">
             <li className="side-nav__item">
@@ -56,6 +54,12 @@ const Sidebar = () => {
               <Link to="/realisations" className="side-nav__link">
                 <VscTools className="icon" />
                 <span>Réalisations</span>
+              </Link>
+            </li>
+            <li className="side-nav__item">
+              <Link to="/contact" className="side-nav__link">
+                <FiMail className="icon" />
+                <span>Contact</span>
               </Link>
             </li>
           </ul>
