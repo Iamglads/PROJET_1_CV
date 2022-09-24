@@ -28,6 +28,7 @@ const Contact = () => {
             </a>
           </li>
         </ul>
+        <p>gladston.aristoverne@gmail.com</p>
       </div>
     </section>
   );

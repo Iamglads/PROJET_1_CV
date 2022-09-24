@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Ohmyfood",
-        "langages": ["React", "Sass"],
+        "langages": ["Sass"],
         "image": "https://github.com/Iamglads/Portfolio/blob/main/images/ohmyfood.png?raw=true",
         "url" : "https://ag-ohmyfood.netlify.app/",
         "source": "https://iamglads.github.io/projet_3_ohmyfood/",
@@ -48,6 +48,16 @@
     },
     {
         "id": 6,
+        "title": "Validation de formulaire",
+        "langages": ["Javascript"],
+        "image": "https://github.com/Iamglads/JavaScript_training/blob/master/images/form.png?raw=true",
+        "url": "https://ga-js-training.netlify.app/projets/form-validation/form-validation.html",
+        "source": "https://github.com/Iamglads/JavaScript_training/tree/master/projets/form-validation",
+        "description" : "Validation d'un formulaire en Javascript"
+    },
+ 
+    {
+        "id": 7,
         "title": "AJ Loc & Services",
         "langages": ["WordPress", "Woocommerce"],
         "image": "https://github.com/Iamglads/Portfolio/blob/main/images/ajloc.png?raw=true",
