@@ -64,5 +64,14 @@
         "url": "https://www.ajlocationetservices.fr/",
         "source": "",
         "description" : "Le site e-commerce d'une entreprise, intégré dans WordPress avec le Builder de page Elementor."
+    },
+    {
+        "id": 8,
+        "title": "Orinoco",
+        "langages": ["Javascript"],
+        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/orinoco.png?raw=true",
+        "url": "https://ga-orinoco.netlify.app/index.html",
+        "source": "https://github.com/Iamglads/Orinoco",
+        "description" : "Projet en cours de refacrisation."
     }
 ]
