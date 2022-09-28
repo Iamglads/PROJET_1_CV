@@ -13,7 +13,8 @@ import "./App.scss";
 function App() {
   return (
     <div className="app">
-      <div className="app__wrappe">
+      <p>Cette page Web en cours de maintenance !</p>
+      {/*  <div className="app__wrappe">
         <Sidebar />
         <div className="app__content">
           <Routes>
@@ -25,7 +26,7 @@ function App() {
             <Route path="*" element={<Error />} />
           </Routes>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
