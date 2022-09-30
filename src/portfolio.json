@@ -1,12 +1,12 @@
 [
     {
         "id": 1,
-        "title": "Ohmyfood",
-        "langages": ["Sass"],
+        "title": "Ohmyfood Theme",
+        "langages": ["WordPress, Sass"],
         "image": "https://github.com/Iamglads/Portfolio/blob/main/images/ohmyfood.png?raw=true",
-        "url" : "https://ag-ohmyfood.netlify.app/",
-        "source": "https://iamglads.github.io/projet_3_ohmyfood/",
-        "description" : "Intégration de maquette, animation CSS"
+        "url" : "http://dev.kbatis.com/",
+        "source": "https://github.com/Iamglads/ohmyfood-theme-wordpress",
+        "description" : "Développement de theme WordPress en cours..."
     },
     {
         "id": 2,
@@ -25,7 +25,7 @@
         "image": "https://github.com/Iamglads/Portfolio/blob/main/images/groupomania.png?raw=true",
         "url": "https://github.com/Iamglads/projet_7_Groupomania",
         "source": "https://github.com/Iamglads/projet_7_Groupomania",
-        "description" : "Application réseau social d'une entreprise."
+        "description" : "MVP d'une application réseau social d'une entreprise."
     },
 
     {
@@ -40,7 +40,7 @@
     {
         "id": 5,
         "title": "Quentin Chantrel",
-        "langages": ["WordPress"],
+        "langages": ["WordPressn Elementor"],
         "image": "https://github.com/Iamglads/Portfolio/blob/main/images/qc.png?raw=true",
         "url": "https://quentinchantrel.com/",
         "source": "",
@@ -67,11 +67,11 @@
     },
     {
         "id": 8,
-        "title": "Orinoco",
-        "langages": ["Javascript"],
-        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/orinoco.png?raw=true",
-        "url": "https://ga-orinoco.netlify.app/index.html",
-        "source": "https://github.com/Iamglads/Orinoco",
-        "description" : "Projet en cours de refacrisation."
+        "title": "kbatis",
+        "langages": ["WordPressn Elementor"],
+        "image": "https://www.kbatis.com/wp-content/uploads/2022/05/Illustration.svg",
+        "url": "https://www.kbatis.com/",
+        "source": "https://www.kbatis.com/",
+        "description" : "La création d'un site Web d'une petite agence Web en ligne"
     }
 ]
