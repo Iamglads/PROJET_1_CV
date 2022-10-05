@@ -1,23 +1,22 @@
 .app {
     min-height: 100vh;
-   //max-width: 1400px;
     display: flex;
-    justify-content: center;
     &__wrappe {
-       max-width: 1200px;
         width: 100%;
         display: flex;
-        margin: 60px;
-        align-self: stretch;
         background: linear-gradient(145deg, #cacaca, #f0f0f0);
-box-shadow:  20px 20px 60px #bebebe,
+        box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
     }
     &__content {
         width: 100%;
+        max-width: 1000px;
         display: flex;
-        justify-content: flex-start;
         align-items: center;
-        padding: 4em;
+        padding: 8em 4em;
+
+        @media screen and (max-width: 599px) {
+            padding: 6em 2em;
+        }
     }
 }

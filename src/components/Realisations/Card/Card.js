@@ -8,7 +8,10 @@ const Card = ({ data }) => {
   return (
     <>
       <li className="achievements__item">
-        <img src={image} alt={title} />
+        <a href={url}>
+          <img src={image} alt={title} />
+        </a>
+
         <div className="urls">
           <a href={url} target="_blank" rel="noreferrer">
             <FiMonitor />

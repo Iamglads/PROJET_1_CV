@@ -9,10 +9,8 @@
     z-index: 1;
     transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 
- 
-
     &__iconmenu {
-       //display: none;
+       display: none;
         position: absolute;
         top: 20px;
         right: 20px;
@@ -131,10 +129,12 @@
     }
 
     @include forMobile {
-       position: absolute;
+       position: fixed;
         height: 100vh;
-        top: 0;
-        left: 0;
+        transform: translate(-280px);
+        transition: all 300ms;
     }
     
 }
+
+

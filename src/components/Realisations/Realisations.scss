@@ -1,6 +1,5 @@
 .achievements {
-    max-height: 600px;
-    overflow: scroll;
+    //max-height: 600px;
     .divider-heading {
         height: 2px;
         width: 50px;
@@ -10,6 +9,7 @@
         margin-top: 1em;
     }
     &__list {
+        margin-top: 2em;
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;

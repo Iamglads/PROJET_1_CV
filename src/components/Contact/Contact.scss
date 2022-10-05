@@ -1,5 +1,6 @@
 .contact {
     max-width: 600px;
+    width: 100%;
     &__divider {
         height: 2px;
         width: 50px;
@@ -12,6 +13,51 @@
             gap: 10px;
             .icon {
                 font-size: 30px;
+            }
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-start;
+        gap: 30px;
+        label {
+            visibility: hidden;
+        }
+        input, textarea {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #eb2f64;
+            padding: .3em;
+            background: transparent;
+        }
+
+        button {
+            padding: .5em 2em;
+            text-align: center;
+            background: transparent;
+            border: 1px solid #eb2f64;
+            letter-spacing: 3px;
+            cursor: pointer;
+            position: relative;
+           overflow: hidden;
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 3px;
+                background-color: #eb2f64;
+                transform: scaleY(0);
+                transition: transform .2s,
+                width .4s cubic-bezier(1,0,0,1) .2s,
+                background-color .1s;
+                &:active, &:hover::before {
+                    transform: scaleY(1);
+                    width: 100%;
+                }
             }
         }
     }

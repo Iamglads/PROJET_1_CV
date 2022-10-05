@@ -1,5 +1,5 @@
 .education {
-    max-width: 600px;
+    max-width: 900px;
     &__divider {
         height: 2px;
         width: 50px;
@@ -15,5 +15,8 @@
 
     &__skills {
         margin-top: 60px;
+        .item {
+            font-size: 14px;
+        }
     }
 }
