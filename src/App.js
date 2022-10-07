@@ -13,8 +13,18 @@ import "./App.scss";
 function App() {
   return (
     <div className="app">
-      {/* <p>Cette page Web en cours de maintenance !</p> */}
-      <div className="app__wrappe">
+      <p
+        style={{
+          with: "100%",
+          marginTop: "60px",
+          padding: "40px",
+          fontSize: "20px",
+          textJustify: "center",
+        }}
+      >
+        J'apporte des modifications sur cette page actuellement.
+      </p>
+      {/* <div className="app__wrappe">
         <Sidebar />
         <div className="app__content">
           <Routes>
@@ -26,7 +36,7 @@ function App() {
             <Route path="*" element={<Error />} />
           </Routes>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
