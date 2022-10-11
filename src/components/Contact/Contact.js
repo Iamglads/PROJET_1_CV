@@ -43,7 +43,7 @@ const Contact = () => {
           </li>
         </ul>
         <p>gladston.aristoverne@gmail.com</p>
-        <form onSubmit={handleSubmit}>
+        {/*         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Nom</label>
             <input
@@ -68,7 +68,7 @@ const Contact = () => {
             />
           </div>
           <button type="submit">Envoyer</button>
-        </form>
+        </form> */}
       </div>
     </section>
   );

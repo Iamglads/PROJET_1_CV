@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { VscGithubInverted } from "react-icons/vsc";
 import { FiMonitor } from "react-icons/fi";
 import "./Card.scss";
 
-const Card = ({ data }) => {
+const Card = ({ data, index }) => {
   const { title, langages, image, url, source, description } = data;
+
   return (
     <>
-      <li className="achievements__item">
+      <li className="achievements__item ">
         <a href={url}>
           <img src={image} alt={title} />
         </a>
@@ -25,7 +26,7 @@ const Card = ({ data }) => {
             return <span key={index}>{langage}</span>;
           })}
         </div>
-        <p>{description.substring(0, 80)}</p>
+        <p>{description}</p>
       </li>
     </>
   );

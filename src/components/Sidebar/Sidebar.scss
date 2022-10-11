@@ -3,28 +3,15 @@
     background-color:#333;
     color: #FFF;
     min-width: 250px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     z-index: 1;
+    position: fixed;
+    top: 0;
+    left: -100%;
     transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-    &__iconmenu {
-       display: none;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        cursor: pointer;
-        .icon {
-            font-size: 30px;
-            color: $firstColor;
-        }
-
-    @include forMobile {
-        display: block;
-    }
-    }
-
     .infobox {
         display: flex;
         flex-direction: column;
@@ -127,14 +114,12 @@
             font-weight: 200;
         }
     }
-
-    @include forMobile {
-       position: fixed;
-        height: 100vh;
-        transform: translate(-280px);
-        transition: all 300ms;
-    }
     
+}
+
+.active {
+    left: 0;
+    transition: 350ms;
 }
 
 

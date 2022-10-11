@@ -35,17 +35,9 @@ const Realisations = () => {
       <p className="achievements__note">
         Mes réalisation en agence sur demande.
       </p>
-      <ul className="achievements__filter">
-        {projects.map((projects, index) => {
-          let langagesArr = [];
-          langagesArr.push(...langagesArr, projects.langages);
-          console.log(langagesArr);
-          return <li key={index}></li>;
-        })}
-      </ul>
       <ul className="achievements__list">
         {projects.map((projects, index) => {
-          return <Card data={projects} key={index} />;
+          return <Card data={projects} index={index} />;
         })}
       </ul>
     </section>

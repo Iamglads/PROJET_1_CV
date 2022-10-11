@@ -1,4 +1,6 @@
+import React, { useContext } from "react";
 import { Routes, Route } from "react-router-dom";
+import { AiOutlineMenuUnfold, AiOutlineClose } from "react-icons/ai";
 import {
   Sidebar,
   Realisations,
@@ -9,22 +11,22 @@ import {
   Error,
 } from "./components";
 import "./App.scss";
+import { AppContext } from "./context/context";
 
 function App() {
+  const { openSidebar, toggleMenu } = useContext(AppContext);
+
+  //console.log(openSidebar, toggleMenu);
   return (
     <div className="app">
-      <p
-        style={{
-          with: "100%",
-          marginTop: "60px",
-          padding: "40px",
-          fontSize: "20px",
-          textJustify: "center",
-        }}
-      >
-        J'apporte des modifications sur cette page actuellement.
-      </p>
-      {/* <div className="app__wrappe">
+      <div className="app__iconmenu" onClick={toggleMenu}>
+        {openSidebar ? (
+          <AiOutlineClose className="icon" />
+        ) : (
+          <AiOutlineMenuUnfold className="icon" />
+        )}
+      </div>
+      <div className="app__wrappe">
         <Sidebar />
         <div className="app__content">
           <Routes>
@@ -36,7 +38,7 @@ function App() {
             <Route path="*" element={<Error />} />
           </Routes>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }

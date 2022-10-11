@@ -1,6 +1,21 @@
+
+@import "./sass/variables";
+@import "./sass/mixins.scss";
+
 .app {
     min-height: 100vh;
     display: flex;
+    &__iconmenu {
+        display: block;
+         position: absolute;
+         top: 20px;
+         right: 20px;
+         cursor: pointer;
+         .icon {
+             font-size: 30px;
+             color: $firstColor;
+         }
+     }
     &__wrappe {
         width: 100%;
         display: flex;
@@ -10,11 +25,9 @@
     }
     &__content {
         width: 100%;
-        max-width: 1000px;
         display: flex;
         align-items: center;
         padding: 8em 4em;
-
         @media screen and (max-width: 599px) {
             padding: 6em 2em;
         }
