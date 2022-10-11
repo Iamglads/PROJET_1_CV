@@ -28,7 +28,11 @@ function App() {
       </div>
       <div className="app__wrappe">
         <Sidebar />
-        <div className="app__content">
+        <div
+          className={
+            openSidebar ? "app__content sidebar-active" : "app__content"
+          }
+        >
           <Routes>
             <Route index path="/" element={<Apropos />} />
             <Route path="/realisations" element={<Realisations />} />

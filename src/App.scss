@@ -24,7 +24,7 @@
              -20px -20px 60px #ffffff;
     }
     &__content {
-        width: 100%;
+        width:auto;
         display: flex;
         align-items: center;
         padding: 8em 4em;
@@ -32,4 +32,9 @@
             padding: 6em 2em;
         }
     }
+}
+
+.sidebar-active {
+    transform: translateX(250px);
+    transition: all 300ms;
 }
