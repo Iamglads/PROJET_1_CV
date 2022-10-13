@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { VscGithubInverted } from "react-icons/vsc";
+import cv from "../../assets/images/cv.pdf";
 
 const Contact = () => {
   const [name, setName] = useState("Glad");
@@ -43,6 +44,14 @@ const Contact = () => {
           </li>
         </ul>
         <p>gladston.aristoverne@gmail.com</p>
+        <div className="cv">
+          <a href={cv} download>
+            Télecharger CV
+          </a>
+          <a href={cv} target="_blank">
+            Ouvrir
+          </a>
+        </div>
         {/*         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Nom</label>
