@@ -14,42 +14,44 @@ const Sidebar = () => {
   return (
     <>
       <nav className={openSidebar ? "sidebar active" : "sidebar"}>
-        <div className="infobox">
-          <img src={Image} alt="Gladston Aristoverne" />
-          <h1 className="infobox__name">
-            Gladston
-            <br /> Aristoverne
-          </h1>
-        </div>
-        <ul className="side-nav">
-          {Links.map((link, index) => {
-            return <NavLinks key={index} item={link} />;
-          })}
-        </ul>
-
-        <footer className="legal">
-          <ul className="infobox__socialmedia">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/gladston-aristoverne/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaLinkedin className="icon" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/Iamglads"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <VscGithubInverted className="icon" />
-              </a>
-            </li>
+        <div className="sidebar__wrappe">
+          <div className="infobox">
+            <img src={Image} alt="Gladston Aristoverne" />
+            <h1 className="infobox__name">
+              Gladston
+              <br /> Aristoverne
+            </h1>
+          </div>
+          <ul className="side-nav">
+            {Links.map((link, index) => {
+              return <NavLinks key={index} item={link} />;
+            })}
           </ul>
-          <p>&copy; 2022 by me. Tous droits réservés.</p>
-        </footer>
+
+          <footer className="legal">
+            <ul className="infobox__socialmedia">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/gladston-aristoverne/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaLinkedin className="icon" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Iamglads"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <VscGithubInverted className="icon" />
+                </a>
+              </li>
+            </ul>
+            <p>&copy; 2022 by me. Tous droits réservés.</p>
+          </footer>
+        </div>
       </nav>
     </>
   );
