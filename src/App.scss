@@ -39,4 +39,7 @@
 .sidebar-active {
     transform: translateX(280px);
     transition: all 300ms;
+    @include forMobile {
+            transform: translateX(0);
+        }
 }

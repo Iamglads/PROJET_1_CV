@@ -15,6 +15,21 @@
                 font-size: 30px;
             }
         }
+                .cv {
+                    margin-top: 60px;
+                    font-size: 18px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+        
+                    .download,
+                    .open {
+                        padding: 14px 10px;
+                        text-align: center;
+                        border-radius: 20px;
+                        border: 1px solid #eb2f64;
+                    }
+                }
     }
 
     form {

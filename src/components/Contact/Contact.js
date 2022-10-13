@@ -45,11 +45,11 @@ const Contact = () => {
         </ul>
         <p>gladston.aristoverne@gmail.com</p>
         <div className="cv">
-          <a href={cv} download>
+          <a href={cv} download class="download">
             Télecharger CV
           </a>
-          <a href={cv} target="_blank">
-            Ouvrir
+          <a href={cv} target="_blank" class="open">
+            Ouvrir CV
           </a>
         </div>
         {/*         <form onSubmit={handleSubmit}>

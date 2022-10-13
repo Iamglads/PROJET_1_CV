@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
-  const [openSidebar, setOpenSidebar] = useState(false);
+  const [openSidebar, setOpenSidebar] = useState(true);
 
   const toggleMenu = () => {
     setOpenSidebar(!openSidebar);

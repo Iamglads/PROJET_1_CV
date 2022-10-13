@@ -33,7 +33,7 @@ const Realisations = () => {
       <h2> RÉALISATIONS</h2>
       <div className="achievements__divider divider-heading"></div>
       <p className="achievements__note">
-        Mes réalisation en agence sur demande.
+        Mes réalisations en agence sur demande.
       </p>
       <ul className="achievements__list">
         {projects.map((projects, index) => {
