@@ -16,9 +16,9 @@
              font-size: 30px;
              color: $firstColor;
          }
-                 @include forTablet {
-                     display: block;
-                 }
+                @include forTablet {
+                    display: block;
+                }
      }
     &__wrappe {
         width: 100%;

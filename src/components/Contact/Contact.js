@@ -10,7 +10,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
 		e.preventDefault();
-    let contactForm = {
+		let contactForm = {
       name,
       email,
       message,
