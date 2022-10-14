@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Ohmyfood Theme",
-        "langages": ["WordPress, Sass"],
+        "langages": ["WordPress", "Sass"],
         "image": "https://github.com/Iamglads/Portfolio/blob/main/images/ohmyfood.png?raw=true",
         "url" : "http://dev.kbatis.com/",
         "source": "https://github.com/Iamglads/ohmyfood-theme-wordpress",
@@ -40,7 +40,7 @@
     {
         "id": 5,
         "title": "Quentin Chantrel",
-        "langages": ["WordPressn Elementor"],
+        "langages": ["WordPress", "Elementor"],
         "image": "https://github.com/Iamglads/Portfolio/blob/main/images/qc.png?raw=true",
         "url": "https://quentinchantrel.com/",
         "source": "",
@@ -68,10 +68,19 @@
     {
         "id": 8,
         "title": "kbatis",
-        "langages": ["WordPress Elementor"],
+        "langages": ["WordPress", "Elementor"],
         "image": "https://www.kbatis.com/wp-content/uploads/2022/05/Illustration.svg",
         "url": "https://www.kbatis.com/",
         "source": "https://www.kbatis.com/",
         "description" : "La création d'un site Web d'une petite agence Web en ligne"
+    },
+    {
+        "id": 8,
+        "title": "kbatis React",
+        "langages": ["M", "E", "R", "N"],
+        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/Annuaire%20entreprise%20au%20Que%CC%81bec.png?raw=true",
+        "url": "https://github.com/Iamglads/Enterprise",
+        "source": "https://github.com/Iamglads/Enterprise",
+        "description" : "Suivez le développement de cette application MERN"
     }
 ]
