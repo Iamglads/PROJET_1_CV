@@ -37,7 +37,7 @@ const Realisations = () => {
       </p>
       <ul className="achievements__list">
         {projects.map((projects, index) => {
-          return <Card data={projects} index={index} />;
+          return <Card data={projects} key={index} />;
         })}
       </ul>
     </section>

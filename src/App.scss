@@ -6,7 +6,7 @@
     min-height: 100vh;
     display: flex;
     &__iconmenu {
-        display: block;
+        display: none;
          position: fixed;
          top: 20px;
          right: 20px;
@@ -16,6 +16,9 @@
              font-size: 30px;
              color: $firstColor;
          }
+                 @include forTablet {
+                     display: block;
+                 }
      }
     &__wrappe {
         width: 100%;
