@@ -79,8 +79,8 @@
         "title": "kbatis React",
         "langages": ["M", "E", "R", "N"],
         "image": "https://github.com/Iamglads/Portfolio/blob/main/images/Annuaire%20entreprise%20au%20Que%CC%81bec.png?raw=true",
-        "url": "https://github.com/Iamglads/Enterprise",
-        "source": "https://github.com/Iamglads/Enterprise",
+        "url": "https://kbatis.herokuapp.com/",
+        "source": "https://github.com/Iamglads/kbatis",
         "description" : "Suivez le développement de cette application MERN"
     }
 ]
