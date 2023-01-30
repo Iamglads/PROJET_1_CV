@@ -2,15 +2,19 @@ import React, { useContext } from "react";
 import { Routes, Route } from "react-router-dom";
 import { AiOutlineMenuUnfold, AiOutlineClose } from "react-icons/ai";
 import {
-  Sidebar,
+  Navbar,
   Realisations,
   Education,
-  Apropos,
+  Hero,
+  Stack,
+  Services,
+  About,
   Experiences,
   Contact,
   Error,
+  Footer,
 } from "./components";
-import "./App.scss";
+//import "./App.scss";
 import { AppContext } from "./context/context";
 
 function App() {
@@ -18,7 +22,7 @@ function App() {
 
   //console.log(openSidebar, toggleMenu);
   return (
-    <div className="app">
+    /*    <div className="app">
       <div className="app__iconmenu" onClick={toggleMenu}>
         {openSidebar ? (
           <AiOutlineClose className="icon" />
@@ -27,7 +31,7 @@ function App() {
         )}
       </div>
       <div className="app__wrappe">
-        <Sidebar />
+       
         <div
           className={
             openSidebar ? "app__content sidebar-active" : "app__content"
@@ -43,7 +47,18 @@ function App() {
           </Routes>
         </div>
       </div>
-    </div>
+    </div> */
+
+    <>
+      <Navbar />
+      <Hero />
+      <About />
+      <Services />
+      <Realisations />
+      <Stack />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 

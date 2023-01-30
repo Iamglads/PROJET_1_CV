@@ -29,17 +29,18 @@ const Realisations = () => {
   }, []);
 
   return (
-    <section className="achievements">
-      <h2> RÉALISATIONS</h2>
-      <div className="achievements__divider divider-heading"></div>
-      <p className="achievements__note">
-        Mes réalisations en agence sur demande.
-      </p>
-      <ul className="achievements__list">
+    <section id="realisations" className="section projects">
+      <div className="section-title">
+        <h2>Dernières réalisations</h2>
+        <div className="underline"></div>
+        <p className="projects-text">Mes réalisations en agence sur demande.</p>
+      </div>
+
+      <div className="section-center projects-center">
         {projects.map((projects, index) => {
           return <Card data={projects} key={index} />;
         })}
-      </ul>
+      </div>
     </section>
   );
 };

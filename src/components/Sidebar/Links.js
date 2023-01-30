@@ -1,32 +1,53 @@
 import { ImAccessibility } from "react-icons/im";
 import { FiMail } from "react-icons/fi";
+import { GrLinkedin } from "react-icons/gr";
 
-import { VscTools, VscBriefcase, VscMortarBoard } from "react-icons/vsc";
+import {
+  VscTools,
+  VscBriefcase,
+  VscMortarBoard,
+  VscGithubInverted,
+} from "react-icons/vsc";
+
+import { FaFacebook } from "react-icons/fa";
 
 export const Links = [
   {
     name: "Qui suis-je ?",
-    link: "/",
+    link: "#a-propos",
     icon: <ImAccessibility />,
   },
   {
-    name: "Experiences",
-    link: "/experiences",
+    name: "Services",
+    link: "#services",
     icon: <VscBriefcase />,
   },
   {
-    name: "Formation",
-    link: "/education",
-    icon: <VscMortarBoard />,
-  },
-  {
     name: "Réalisations",
-    link: "/realisations",
+    link: "#realisations",
     icon: <VscTools />,
   },
   {
     name: "Contact",
-    link: "/contact",
+    link: "#contact",
     icon: <FiMail />,
+  },
+];
+
+export const SocialMedia = [
+  {
+    icon: <GrLinkedin />,
+    url: "https://www.linkedin.com/in/gladston-aristoverne/",
+    class: "social-icon",
+  },
+  {
+    icon: <VscGithubInverted />,
+    url: "https://github.com/Iamglads",
+    class: "social-icon",
+  },
+  {
+    icon: <FaFacebook />,
+    url: "https://www.facebook.com/glad.toi.3",
+    class: "social-icon",
   },
 ];

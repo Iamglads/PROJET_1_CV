@@ -1,0 +1,25 @@
+/*
+=============== 
+Footer
+===============
+*/
+.footer {
+    padding-bottom: 1rem;
+    background: #222;
+    display: grid;
+    place-items: center;
+  .social-icons {
+      margin-bottom: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .social-icon {
+      color: var(--white);
+    }
+    .social-icon:hover {
+      color: var(--clr-primary);
+    }
+    .footer p {
+      font-size: 12px;
+      text-transform: capitalize;
+    }
+  }

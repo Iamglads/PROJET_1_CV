@@ -2,11 +2,11 @@
     {
         "id": 1,
         "title": "Ohmyfood Theme",
-        "langages": ["WordPress", "Sass"],
+        "langages": ["WordPress", "PHP"],
         "image": "https://github.com/Iamglads/Portfolio/blob/main/images/ohmyfood.png?raw=true",
         "url" : "http://dev.kbatis.com/",
         "source": "https://github.com/Iamglads/ohmyfood-theme-wordpress",
-        "description" : "Développement de theme WordPress en cours..."
+        "description" : "Développement du thème Wordpress Ohmyfood de zéro."
     },
     {
         "id": 2,
@@ -39,18 +39,18 @@
     },
     {
         "id": 5,
-        "title": "Quentin Chantrel",
+        "title": "Kbatis Agency",
         "langages": ["WordPress", "Elementor"],
-        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/qc.png?raw=true",
-        "url": "https://quentinchantrel.com/",
+        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/kbatis-agency.png?raw=true",
+        "url": "https://kbatis.com",
         "source": "",
-        "description" : "Portfolio d'un réalisateur intégré dans WordPress avec le Builder de page Elementor."
+        "description" : "Création du site vitrine d'une petite agence Web9"
     },
     {
         "id": 6,
         "title": "Validation de formulaire",
         "langages": ["Javascript"],
-        "image": "https://github.com/Iamglads/JavaScript_training/blob/master/images/form.png?raw=true",
+        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/form-validation.png?raw=true",
         "url": "https://ga-js-training.netlify.app/projets/form-validation/form-validation.html",
         "source": "https://github.com/Iamglads/JavaScript_training/tree/master/projets/form-validation",
         "description" : "Validation d'un formulaire en Javascript"
@@ -67,20 +67,20 @@
     },
     {
         "id": 8,
-        "title": "kbatis",
-        "langages": ["WordPress", "Elementor"],
-        "image": "https://www.kbatis.com/wp-content/uploads/2022/05/Illustration.svg",
-        "url": "https://www.kbatis.com/",
-        "source": "https://www.kbatis.com/",
-        "description" : "La création d'un site Web d'une petite agence Web en ligne"
-    },
-    {
-        "id": 8,
         "title": "kbatis React",
         "langages": ["M", "E", "R", "N"],
-        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/Annuaire%20entreprise%20au%20Que%CC%81bec.png?raw=true",
+        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/kbatis.png?raw=true",
         "url": "https://kbatis.herokuapp.com/",
         "source": "https://github.com/Iamglads/kbatis",
         "description" : "Suivez le développement de cette application MERN"
+    },
+    {
+        "id": 9,
+        "title": "Quentin Chantrel",
+        "langages": ["WordPress", "Elementor"],
+        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/qc.png?raw=true",
+        "url": "https://quentinchantrel.com/",
+        "source": "",
+        "description" : "Portfolio d'un réalisateur intégré dans WordPress avec le Builder de page Elementor."
     }
 ]

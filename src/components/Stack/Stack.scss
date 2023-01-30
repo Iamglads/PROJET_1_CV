@@ -1,0 +1,20 @@
+.stack {
+    background-color: var(--clr-grey);
+    .stack-center {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 100px);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        @include forMobile {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 100px);
+        }
+        div {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    
+}

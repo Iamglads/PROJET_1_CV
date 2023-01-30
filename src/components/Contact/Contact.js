@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { FaLinkedin } from "react-icons/fa";
-import { VscGithubInverted } from "react-icons/vsc";
 import cv from "../../assets/images/cv.pdf";
 
 const Contact = () => {
@@ -9,8 +7,8 @@ const Contact = () => {
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
-		e.preventDefault();
-		let contactForm = {
+    e.preventDefault();
+    let contactForm = {
       name,
       email,
       message,
@@ -19,40 +17,30 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact">
-      <h2 className="contact__heading">CONTACT</h2>
-      <div className="contact__divider divider-heading"></div>
-      <div className="contact__content">
-        <ul className="contact__content--icons">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/gladston-aristoverne/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaLinkedin className="icon" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/Iamglads"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <VscGithubInverted className="icon" />
-            </a>
-          </li>
-        </ul>
-        <p>gladston.aristoverne@gmail.com</p>
-        <div className="cv">
-          <a href={cv} download class="download">
+    <section id="contact" className="section contact">
+      <div className="section-title">
+        <h2>Contact</h2>
+        <div className="underline"></div>
+      </div>
+
+      <div className="section-center">
+        {/*   <a
+          href="mailto:gladston.aristoverne@gmail.com"
+          className="mail-address"
+        >
+          gladston.aristoverne@gmail.com
+        </a> */}
+        <div className="btn-actions">
+          <a href={cv} download className="btn btn-download">
             Télecharger CV
           </a>
-          <a href={cv} target="_blank" class="open">
+          <a href={cv} target="_blank" className="btn">
             Ouvrir CV
           </a>
         </div>
-        {/*         <form onSubmit={handleSubmit}>
+      </div>
+
+      {/*         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Nom</label>
             <input
@@ -78,7 +66,6 @@ const Contact = () => {
           </div>
           <button type="submit">Envoyer</button>
         </form> */}
-      </div>
     </section>
   );
 };
