@@ -4,12 +4,12 @@
 /* 
 @import "./sass/base";
 @import "./App.scss";
-@import "./components/Sidebar/Sidebar.scss";
 @import "./components/Education/Education.scss";
-
 @import "./components/Experiences/Experiences.scss";
 @import "./components/Realisations/Realisations.scss";
 @import "./components/Realisations/Card/Card.scss";*/
+@import "./components/Nav/Sidebar.scss";
+@import "./components/Nav/Navbar.scss";
 @import "./components/About/About.scss";
 @import "./components/Contact/Contact.scss";  
 @import "./components/Stack/Stack.scss";
@@ -80,6 +80,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 img:not(.nav-logo) {
   width: 100%;
@@ -187,87 +188,6 @@ p {
   text-align: center;
 }
 
-/*
-=============== 
-Navbar
-===============
-*/
-.nav-links {
-  display: none;
-}
-.nav {
-  height: 5rem;
-  padding: 1rem;
-  display: grid;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-.nav-center {
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-}
-.nav-header {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  -webkit-box-align: center;
-  align-items: center;
-}
-.nav-btn {
-  background: transparent;
-  border-color: transparent;
-  color: var(--white);
-  font-size: 2rem;
-  cursor: pointer;
-  justify-self: end;
-}
-@media screen and (min-width: 768px) {
-  .nav {
-    background: var(--clr-primary);
-  }
-  .nav-btn {
-    display: none;
-  }
-  .nav-links {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    -webkit-column-gap: 2rem;
-    -moz-column-gap: 2rem;
-    column-gap: 2rem;
-    justify-self: end;
-  }
-  .nav-links a {
-    text-transform: capitalize;
-    color: var(--white);
-    letter-spacing: var(--spacing);
-    -webkit-transition: var(--transition);
-    transition: var(--transition);
-  }
-  .nav-links a:hover {
-    color: var(--clr-primary-5);
-  }
-  .nav-center {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    -webkit-box-align: center;
-    align-items: center;
-  }
-}
-/* fixed navbar */
-.navbar-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: var(--white);
-  z-index: 2;
-  box-shadow: var(--light-shadow);
-}
-
-
 .social-icons {
   display: grid;
   margin-top: 3rem;
@@ -344,41 +264,7 @@ Hero
   border-radius: var(--radius);
   position: relative;
 }
-/*
-=============== 
-About
-===============
-*/
-/* section title added to globals */
-.about-title {
-  text-align: left;
-  margin-bottom: 2rem;
-}
-.about-title .underline {
-  margin-left: 0;
-}
-.about-center {
-  display: grid;
-  gap: 3rem 2rem;
-}
-.about-img {
-  justify-self: center;
-  filter: grayscale(1);
-}
-@media screen and (min-width: 992px) {
-  .about-center {
-    grid-template-columns: 1fr 1fr;
-  }
-  .about-img {
-    position: relative;
-  }
-  .about-img::before {
-    left: -2rem;
-  }
-  .about-info {
-    align-self: center;
-  }
-}
+
 /*
 =============== 
 Services

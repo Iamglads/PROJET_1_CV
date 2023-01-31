@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../../assets/images/glad.jpg";
-import { SocialMedia } from "../Sidebar/Links";
+import { SocialMedia } from "../Nav/Links";
 
 const Hero = () => {
   return (

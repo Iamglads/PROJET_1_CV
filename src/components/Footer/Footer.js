@@ -1,6 +1,6 @@
 import React from "react";
 
-import { SocialMedia } from "../Sidebar/Links";
+import { SocialMedia } from "../Nav/Links";
 
 const Footer = () => {
   return (
@@ -18,12 +18,7 @@ const Footer = () => {
           })}
         </ul>
 
-        <p>
-          &copy; Gladston Aristoverne | Design by{" "}
-          <a href="https://www.johnsmilga.com/" target="_blank">
-            Codingaddict
-          </a>
-        </p>
+        <p>&copy;Gladston Aristoverne - Tous droits révervés</p>
       </footer>
     </div>
   );

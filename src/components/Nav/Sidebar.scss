@@ -1,13 +1,13 @@
 
 .sidebar {
-    background-color:#333;
-    color: #FFF;
+    background-color: var(--clr-grey);
+    color: var(--white);
     min-width: 250px;
     height: 100%;
     z-index: 1;
     position: fixed;
     display: flex;
-        align-items: center;
+    align-items: center;
     top: 0;
     left: -100%;
     transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -18,41 +18,13 @@
             max-height: 900px;
             height: 100%;
         }
-    .infobox {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 4rem 1rem 0 1rem;
-        img {
-            width: 130px;
-                height: 130px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        &__name {
-            font-weight: 200;
-                margin: 20px;
-                letter-spacing: 4px;
-                text-transform: uppercase;
-                text-align: center;
-        }
-        &__socialmedia {
-            display: flex;
-            li {
-                margin: 0 5px;
-                .icon {
-                    font-size: 18px;
-                }
-            }
-        }
-    }
+
     
 .side-nav {
     font-size: 1.4rem;
     list-style: none;
 
-    &__item {
+    .item {
         position: relative;
 
         &:not(:last-child) {
@@ -66,28 +38,28 @@
 
     }
 
-    &__item::before {
+    .item::before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 3px;
-        background-color: $firstColor;
+        background-color: var(--white);
         transform: scaleY(0);
         transition: transform .2s,
                     width .4s cubic-bezier(1,0,0,1) .2s,
                     background-color .1s;
     }
 
-    &__item:hover::before,
-    &__item--active::before {
+    .item:hover::before,
+    .item--active::before {
         transform: scaleY(1);
         width: 100%;
     }
 
-    &__item:active::before {
-        background-color: $firstColor;
+    .item:active::before {
+        background-color: var(--white);
     }
 
     &__link:link,
@@ -102,7 +74,7 @@
 
     }
 
-    &__icon {
+    .icon {
         width: 1.75rem;
         height: 1.75rem;
         margin-right: 2rem;
@@ -110,19 +82,7 @@
     }
 }
 
-    .legal {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem;
-        p {
-            margin-top: 10px;
-            font-size: 10px;
-            text-align: center;
-            font-weight: 200;
-        }
-    }
+
     
 }
 

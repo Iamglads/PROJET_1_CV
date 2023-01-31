@@ -24,6 +24,7 @@ const Navbar = () => {
               );
             })}
           </ul>
+          <div className="open-sidebar">Menu</div>
         </div>
       </nav>
     </>

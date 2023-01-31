@@ -9,11 +9,6 @@ const Card = ({ data, index }) => {
         <img src={image} alt={title} className="project-img" />
         <div className="project-info">
           <p className="description">{description}</p>
-          <div className="categories">
-            {langages.map((langage, index) => {
-              return <span key={index}>{langage}</span>;
-            })}
-          </div>
         </div>
       </article>
     </a>
