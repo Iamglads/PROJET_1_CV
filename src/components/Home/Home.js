@@ -8,6 +8,8 @@ import {
   Contact,
 } from "../../components/index";
 
+
+
 const Home = () => {
   return (
     <div>

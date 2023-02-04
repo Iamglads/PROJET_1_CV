@@ -6,14 +6,14 @@ import { AppContext } from "../../context/context";
 
 const Navbar = () => {
   //console.log(openSidebar, toggleMenu);
-  const { openSidebar, toggleMenu } = useContext(AppContext);
+  const { toggleSidebar } = useContext(AppContext);
 
   return (
     <>
       <nav className="nav" id="nav">
         <div className="nav-center">
-          <div className="nav-header">
-            <img src={Logo} className="nav-logo" alt="nav logo" />
+          <div className="nav-logo">
+            <img src={Logo} alt="nav logo" />
           </div>
           <ul className="nav-links">
             {Links.map((link, index) => {
@@ -24,7 +24,9 @@ const Navbar = () => {
               );
             })}
           </ul>
-          <div className="open-sidebar">Menu</div>
+          <div className="menu-burger" onClick={toggleSidebar}>
+            <span className="icon"></span>
+          </div>
         </div>
       </nav>
     </>

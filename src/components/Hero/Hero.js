@@ -4,21 +4,21 @@ import { SocialMedia } from "../Nav/Links";
 
 const Hero = () => {
   return (
-    <header class="hero">
-      <div class="section-center hero-center">
-        <article class="hero-info">
-          <div class="underline"></div>
+    <header className="hero">
+      <div className="section-center hero-center">
+        <article className="hero-info">
+          <div className="underline"></div>
           <h1>Gladston Aristoverne</h1>
           <h4>intégrateur, développeur frontend</h4>
-          <a href="#contact" class="btn hero-btn">
+          <a href="#contact" className="btn hero-btn">
             Contactez-moi!
           </a>
           {/*   social icons */}
-          <ul class="social-icons hero-icons">
-            {SocialMedia.map((link) => {
+          <ul className="social-icons hero-icons">
+            {SocialMedia.map((link, index) => {
               return (
-                <li>
-                  <a href={link.url} className={link.class}>
+                <li key={index}>
+                  <a href={link.url} className={link.className}>
                     {link.icon}
                   </a>
                 </li>
@@ -26,8 +26,8 @@ const Hero = () => {
             })}
           </ul>
         </article>
-        <article class="hero-img">
-          <img src={Image} class="hero-photo" alt="john doe" />
+        <article className="hero-img">
+          <img src={Image} className="hero-photo" alt="john doe" />
         </article>
       </div>
     </header>

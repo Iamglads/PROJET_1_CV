@@ -2,65 +2,66 @@ import React from "react";
 
 const Education = () => {
   return (
-    <section className="education">
-      <h2 className="education__heading">FORMATION</h2>
-      <div className="education__divider divider-heading"></div>
-      <div className="education__formation">
-        <ul>
-          <li className="item">
-            <div>
-              <p>Paris, 2019 - 2020</p>
-            </div>
-          </li>
-          <li className="item">
-            <h3>Openclassrooms</h3>
-            <h4>Développeur web</h4>
-          </li>
-        </ul>
-        <ul>
-          <li className="item">
-            <div>
-              <p>Guyane, France - 2017</p>
-            </div>
-          </li>
-          <li className="item">
-            <h3>Université de Guyane</h3>
-            <h4>Licence Administration Économique & Sociale</h4>
-          </li>
-        </ul>
+    <section className="section timeline">
+      <div className="section-title">
+        <h2>timeline</h2>
+        <div className="underline"></div>
       </div>
-      <div className="education__skills">
-        <h2 className="education__heading">COMPÉTENCES</h2>
-        <div className="education__divider divider-heading"></div>
-
-        <ul>
-          <li className="item">
-            Intégrer du contenu conformément à une maquette (HTML, CSS, Sass,
-            Tailwind).
-          </li>
-          <li className="item">
-            Création de sites onepage, multipages WordPress / E-commerce
-            (Woocommerce).
-          </li>
-          <li className="item">Créer des animations CSS.</li>
-          <li className="item">
-            Maitrise Elementor Builder/Oxygen Builder, testé le builder
-            Breakdance dans sa version beta.
-          </li>
-          <li className="item">
-            Utilisation d'ACF, Pods, Gravity Form, Woocommerce subscription ...
-          </li>
-          <li className="item">Implémenter des interfaces Responsives.</li>
-          <li className="item">
-            Optimiser le référencement naturel des pages Web.
-          </li>
-          <li className="item">
-            Développement d’application Javascript/React.
-          </li>
-          <li className="item">Créer une application Node/Express basic.</li>
-          <li className="item">Versionner mon code avec Git.</li>
-          <li className="item">Gestion de projet Web.</li>
-        </ul>
+      <div className="section-center timeline-center">
+        <article className="timeline-item">
+          <h4>2020</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+            autem, ea excepturi.
+          </p>
+          <span className="number">1</span>
+        </article>
+        <article className="timeline-item">
+          <h4>2019</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+            autem, ea excepturi.
+          </p>
+          <span className="number">2</span>
+        </article>
+        <article className="timeline-item">
+          <h4>2018</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+            autem, ea excepturi.
+          </p>
+          <span className="number">3</span>
+        </article>
+        <article className="timeline-item">
+          <h4>2017</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+            autem, ea excepturi.
+          </p>
+          <span className="number">4</span>
+        </article>
+        <article className="timeline-item">
+          <h4>2016</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+            autem, ea excepturi.
+          </p>
+          <span className="number">5</span>
+        </article>
+        <article className="timeline-item">
+          <h4>2015</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+            autem, ea excepturi.
+          </p>
+          <span className="number">6</span>
+        </article>
       </div>
     </section>
   );

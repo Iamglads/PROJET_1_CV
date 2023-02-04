@@ -6,11 +6,11 @@ import { Navbar, Error, Footer, Home, Sidebar } from "./components";
 import { AppContext } from "./context/context";
 
 function App() {
-  const { openSidebar, toggleMenu } = useContext(AppContext);
+  const { sidebar } = useContext(AppContext);
   return (
     <>
-      <Sidebar />
       <Navbar />
+      {sidebar && <Sidebar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Error />} />

@@ -5,10 +5,9 @@ import { AppContext } from "../../context/context";
 
 const Sidebar = () => {
   //console.log(openSidebar, toggleMenu);
-  const { openSidebar, toggleMenu } = useContext(AppContext);
 
   return (
-    <nav className={openSidebar ? "sidebar active" : "sidebar"}>
+    <nav className="sidebar">
       <ul className="side-nav">
         {Links.map((link, index) => {
           return (
