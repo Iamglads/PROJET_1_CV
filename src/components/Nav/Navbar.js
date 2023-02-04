@@ -3,6 +3,7 @@ import { Links } from "./Links";
 import Logo from "../../assets/images/logo.svg";
 
 import { AppContext } from "../../context/context";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   //console.log(openSidebar, toggleMenu);
@@ -12,9 +13,9 @@ const Navbar = () => {
     <>
       <nav className="nav" id="nav">
         <div className="nav-center">
-          <div className="nav-logo">
+          <Link to="/" className="nav-logo">
             <img src={Logo} alt="nav logo" />
-          </div>
+          </Link>
           <ul className="nav-links">
             {Links.map((link, index) => {
               return (

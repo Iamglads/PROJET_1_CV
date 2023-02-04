@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import Image from "../../assets/images/about-img.jpg";
 
+import { AppContext } from "../../context/context";
+
 const Apropos = () => {
+  const { togglePopup } = useContext(AppContext);
   return (
     <section id="a-propos" className="section about">
       <div className="section-center about-center">
@@ -39,22 +42,12 @@ const Apropos = () => {
             collaboration. Je suis impatient de vous aider à développer votre
             site web et de construire une relation durable avec vous.
           </p>
+
+          <button className="btn" onClick={togglePopup}>
+            Mon Parcours
+          </button>
         </article>
       </div>
-
-      {/*   <div className="about__stack">
-        <h2 className="about__stack--heading"> Stack</h2>
-        <div className="about__stack--divider divider-heading"></div>
-        <div className="about__stack--icons">
-          <i className="fab fa-wordpress"></i>
-          <i className="fab fa-html5"></i>
-          <i className="fab fa-css3"></i>
-          <i className="fab fa-sass"></i>
-          <i className="fab fa-js"></i>
-          <i className="fab fa-node"></i>
-          <i className="fab fa-react"></i>
-        </div>
-      </div> */}
     </section>
   );
 };

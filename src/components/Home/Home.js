@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Realisations,
   Hero,
@@ -6,11 +6,13 @@ import {
   Services,
   About,
   Contact,
+  Education,
 } from "../../components/index";
 
-
+import { AppContext } from "../../context/context";
 
 const Home = () => {
+  const { popup } = useContext(AppContext);
   return (
     <div>
       <Hero />
@@ -19,6 +21,7 @@ const Home = () => {
       <Realisations />
       <Stack />
       <Contact />
+      {popup && <Education />}
     </div>
   );
 };

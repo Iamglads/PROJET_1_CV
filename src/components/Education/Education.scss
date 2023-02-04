@@ -1,22 +1,87 @@
-.education {
-    max-width: 900px;
-    &__divider {
-        height: 2px;
-        width: 50px;
-        background: #eb2f64;
-        margin: 2em 0;
-    }
-   
-    &__formation {
-        .item {
-            margin-top: 10px;
-        }
-    }
 
-    &__skills {
-        margin-top: 60px;
-        .item {
-            font-size: 14px;
+.timeline {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .95);
+    .close-timeline {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        cursor: pointer;
+       &::before,  &::after {
+            content: "";
+            width: 30px;
+            height: 2px;
+            position: absolute;
+            background: var(--white);
+        }
+        &::after {
+            transform: rotate(45deg);
+        }
+        &::before {
+            transform: rotate(-45deg);
         }
     }
 }
+
+.timeline-center {
+    width: 80vw;
+    max-width: 20rem;
+  }
+  .timeline-item {
+    border-top: 2px dashed var(--white);
+    margin: 0;
+    padding: 4rem 2rem;
+    position: relative;
+  }
+  .timeline p {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  .timeline-item:nth-child(even) {
+    border-left: 2px dashed var(--white);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  
+    margin-right: 2rem;
+    padding-right: 0;
+  }
+  .timeline-item:nth-child(odd) {
+    border-right: 2px dashed var(--clr-primary-5);
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-left: 2rem;
+    padding-left: 0;
+  }
+  .timeline-item:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+  }
+  .timeline-item:last-child {
+    border-bottom-left-radius: 0;
+  }
+  .number {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-bottom: 0;
+    background: var(--clr-primary-5);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: var(--clr-primary);
+    font-weight: bold;
+  }
+  .timeline-item:nth-child(even) .number {
+    left: 0;
+  }
+  .timeline-item:nth-child(odd) .number {
+    right: 0;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+  }

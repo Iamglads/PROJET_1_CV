@@ -1,5 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Links } from "./Links";
+import Logo from "../../assets/images/logo.svg";
+import { Link } from "react-router-dom";
 
 import { AppContext } from "../../context/context";
 
@@ -8,6 +10,9 @@ const Sidebar = () => {
 
   return (
     <nav className="sidebar">
+      <Link to="/" className="nav-logo">
+        <img src={Logo} alt="nav logo" />
+      </Link>
       <ul className="side-nav">
         {Links.map((link, index) => {
           return (
@@ -20,6 +25,7 @@ const Sidebar = () => {
           );
         })}
       </ul>
+      <div></div>
     </nav>
   );
 };

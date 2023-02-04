@@ -3,14 +3,14 @@ import React, { useState } from "react";
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
-  const [sidebar, setOpenSidebar] = useState(true);
+  const [sidebar, setOpenSidebar] = useState(false);
   const [popup, setPopup] = useState(false);
 
   const toggleSidebar = () => {
     setOpenSidebar(!sidebar);
   };
   const togglePopup = () => {
-    setOpenSidebar(!setPopup);
+    setPopup(!popup);
   };
 
   return (

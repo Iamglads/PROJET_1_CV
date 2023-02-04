@@ -128,8 +128,8 @@ Variables
   
   .btn {
     text-transform: uppercase;
-    background: var(--clr-primary-5);
-    color: var(--clr-primary);
+    background: transparent;
+    color: var(--white);
     padding: 0.75rem 1rem;
     letter-spacing: var(--spacing);
     display: inline-block;
@@ -137,13 +137,13 @@ Variables
     -webkit-transition: var(--transition);
     transition: var(--transition);
     font-size: 0.875rem;
-    border: 2px solid transparent;
+    border: 2px solid var(--white);
     cursor: pointer;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     border-radius: var(--radius);
+    &:hover {
+      color: var(--clr-primary);
+      background: var(--white);
+    }
   }
-  .btn:hover {
-    color: var(--white);
-    background: var(--clr-primary);
-    border: 1px solid var(--white);
-  }
+ 
