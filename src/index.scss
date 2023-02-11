@@ -3,14 +3,15 @@
 @import "./sass/mixins.scss";
 
 @import "./sass/base";
-/* 
+
 @import "./App.scss";
 @import "./components/Experiences/Experiences.scss";
-@import "./components/Realisations/Realisations.scss";
-@import "./components/Realisations/Card/Card.scss";*/
+@import "./components/Services/Services.scss";
 @import "./components/Education/Education.scss";
+@import "./components/Realisations/Realisations.scss";
 @import "./components/Nav/Sidebar.scss";
 @import "./components/Nav/Navbar.scss";
+@import "./components/Hero/Hero.scss";
 @import "./components/About/About.scss";
 @import "./components/Contact/Contact.scss";  
 @import "./components/Stack/Stack.scss";
@@ -136,59 +137,7 @@ Hero
   position: relative;
 }
 
-/*
-=============== 
-Services
-===============
-*/
-/* bg-grey in globals */
-.service {
-  background: var(--grey);
-  padding: 3rem 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: var(--radius);
-  text-align: center;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-.service-icon {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-.service .underline {
-  width: 3rem;
-  height: 0.125rem;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-.service p {
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-.service:hover {
-  background: var(--clr-grey);
-  color: var(--white);
-}
-.service:hover p {
-  color: var(--white);
-}
-.service:hover .underline {
-  background: var(--white);
-}
-@media screen and (min-width: 676px) {
-  .services-center {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 2rem;
-    -moz-column-gap: 2rem;
-    column-gap: 2rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .services-center {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
+
 /* talk about small screen 
 without grid different setup */
 /*

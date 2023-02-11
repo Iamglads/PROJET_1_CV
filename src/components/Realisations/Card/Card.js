@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { TweenMax, Power2 } from "gsap";
 
 const Card = ({ data, index }) => {
   const { title, langages, image, url, source, description } = data;

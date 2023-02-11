@@ -29,7 +29,7 @@ const Realisations = () => {
   }, []);
 
   return (
-    <section id="realisations" className="section projects">
+    <section id="realisations" className="section achievements">
       <div className="section-title">
         <h2>Dernières réalisations</h2>
         <div className="underline"></div>

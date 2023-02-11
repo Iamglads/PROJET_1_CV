@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { TweenMax, Power2 } from "gsap";
 import Image from "../../assets/images/glad.jpg";
 import { SocialMedia } from "../Nav/Links";
 
 const Hero = () => {
+  const titleAnimation = useRef(null);
+
+  useEffect(() => {
+    TweenMax.from(titleAnimation.current, 1, {
+      y: -100,
+      ease: Power2.easeOut,
+    });
+  }, [titleAnimation]);
   return (
-    <header className="hero">
-      <div className="section-center hero-center">
+    <header className="hero ">
+      <div className="section-center hero-center bubbles">
         <article className="hero-info">
           <div className="underline"></div>
-          <h1>Gladston Aristoverne</h1>
+          <h1 ref={titleAnimation}>Gladston Aristoverne</h1>
           <h4>intégrateur, développeur frontend</h4>
           <a href="#contact" className="btn hero-btn">
             Contactez-moi!
