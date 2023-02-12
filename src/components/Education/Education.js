@@ -6,7 +6,6 @@ const Education = () => {
   const { togglePopup } = useContext(AppContext);
   return (
     <section className="section timeline">
-      <button className="close-timeline" onClick={togglePopup}></button>
       <div className="section-title">
         <h2>Mon Parcours</h2>
         <div className="underline"></div>
@@ -28,6 +27,10 @@ const Education = () => {
           <span className="number">3</span>
         </article>
       </div>
+
+      <button className="btn close-timeline" onClick={togglePopup}>
+        Fermer
+      </button>
     </section>
   );
 };

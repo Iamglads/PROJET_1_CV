@@ -14,22 +14,22 @@ import { FaFacebook } from "react-icons/fa";
 export const Links = [
   {
     name: "Qui suis-je ?",
-    link: "#a-propos",
+    link: "/#a-propos",
     icon: <ImAccessibility />,
   },
   {
     name: "Services",
-    link: "#services",
+    link: "/#services",
     icon: <VscBriefcase />,
   },
   {
     name: "Réalisations",
-    link: "#realisations",
+    link: "/#realisations",
     icon: <VscTools />,
   },
   {
     name: "Contact",
-    link: "#contact",
+    link: "/#contact",
     icon: <FiMail />,
   },
 ];
