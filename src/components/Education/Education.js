@@ -5,7 +5,7 @@ import { AppContext } from "../../context/context";
 const Education = () => {
   const { togglePopup } = useContext(AppContext);
   return (
-    <section className="section timeline">
+    <section className="timeline">
       <div className="section-title">
         <h2>Mon Parcours</h2>
         <div className="underline"></div>

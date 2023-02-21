@@ -30,6 +30,14 @@ body {
     font-size: 0.875rem;       
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
 
 /*
 =============== 

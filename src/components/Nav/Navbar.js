@@ -28,6 +28,7 @@ const Navbar = () => {
           position: isStiky && "fixed",
           zIndex: 1,
           backgroundColor: isStiky && "rgba(0, 0, 0, .5)",
+          height: isStiky && "5rem",
         }}
       >
         <div className="nav-center">
