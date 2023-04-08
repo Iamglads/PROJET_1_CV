@@ -1,12 +1,12 @@
 [
     {
         "id": 1,
-        "title": "Ohmyfood Theme",
-        "langages": ["WordPress", "PHP"],
-        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/ohmyfood.png?raw=true",
-        "url" : "http://dev.kbatis.com/",
-        "source": "https://github.com/Iamglads/ohmyfood-theme-wordpress",
-        "description" : "Développement du thème Wordpress Ohmyfood de zéro."
+        "title": "Calculateur de tips",
+        "langages": ["JavaScript"],
+        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/tips.png?raw=true",
+        "url" : "https://iamglads.github.io/Tip_calculator_app/",
+        "source": "https://github.com/Iamglads/Tip_calculator_app",
+        "description" : "Petit projet en Vanilla JavaScript."
     },
     {
         "id": 2,
