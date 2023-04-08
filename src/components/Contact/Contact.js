@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import cv from "../../assets/images/cv.pdf";
+import Form from "../Form/Form";
 
 const Contact = () => {
   const [name, setName] = useState("Glad");
@@ -24,12 +25,6 @@ const Contact = () => {
       </div>
 
       <div className="section-center">
-        {/*   <a
-          href="mailto:gladston.aristoverne@gmail.com"
-          className="mail-address"
-        >
-          gladston.aristoverne@gmail.com
-        </a> */}
         <div className="btn-actions">
           <a href={cv} download className="btn btn-download">
             Télecharger CV
@@ -40,32 +35,7 @@ const Contact = () => {
         </div>
       </div>
 
-      {/*         <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="name">Nom</label>
-            <input
-              type="test"
-              name="name"
-              id="name"
-              placeholder="Nom complet"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="E-mail" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">E-mail</label>
-            <textarea
-              type="text"
-              name="message"
-              id="message"
-              placeholder="Votre message"
-              rows="5"
-            />
-          </div>
-          <button type="submit">Envoyer</button>
-        </form> */}
+      <Form />
     </section>
   );
 };

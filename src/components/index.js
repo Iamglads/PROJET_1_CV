@@ -8,8 +8,9 @@ import Footer from "./Footer/Footer";
 import Realisations from "./Realisations/Realisations";
 import Navbar from "./Nav/Navbar";
 import Sidebar from "./Nav/Sidebar";
-import Experiences from "./Experiences/Experiences";
 import Contact from "./Contact/Contact";
+import Experiences from "./Experiences/Experiences";
+import Form from "./Form/Form";
 import Error from "./Error/Error";
 
 export {
@@ -26,4 +27,5 @@ export {
   Contact,
   Stack,
   Sidebar,
+  Form,
 };
