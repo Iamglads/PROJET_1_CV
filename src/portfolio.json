@@ -76,6 +76,15 @@
     },
     {
         "id": 9,
+        "title": "HooBank",
+        "langages": ["React", "Tailwind"],
+        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/react-tailwind.png?raw=true",
+        "url": "https://ga-react-tailwind.netlify.app/",
+        "source": "https://ga-react-tailwind.netlify.app/",
+        "description" : "Landing page pour tester tailwind css"
+    },
+    {
+        "id": 10,
         "title": "Quentin Chantrel",
         "langages": ["WordPress", "Elementor"],
         "image": "https://github.com/Iamglads/Portfolio/blob/main/images/qc.png?raw=true",
@@ -83,4 +92,5 @@
         "source": "",
         "description" : "Portfolio d'un réalisateur intégré dans WordPress avec le Builder de page Elementor."
     }
+   
 ]

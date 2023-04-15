@@ -1,0 +1,45 @@
+
+  .card {
+    height: 27rem;
+    position: relative;
+    /* talk later */
+    -webkit-perspective: 1500px;
+    perspective: 1500px;
+    h4 {
+      margin-top: 20px;
+    }
+  }
+ 
+
+  .card-front img {
+    height: 13rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+  }
+  .card-footer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  .card-footer img {
+    width: 2rem;
+    height: 2rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .card-footer p {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    justify-self: end;
+    color: var(--clr-primary-5);
+    font-size: 0.85rem;
+  }
+  .blog-center {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 3rem 1rem;
+  }

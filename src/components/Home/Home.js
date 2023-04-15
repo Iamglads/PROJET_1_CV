@@ -7,6 +7,7 @@ import {
   About,
   Contact,
   Education,
+  Blog,
 } from "../../components/index";
 
 import { AppContext } from "../../context/context";
@@ -20,6 +21,7 @@ const Home = () => {
       <Services />
       <Realisations />
       <Stack />
+      <Blog />
       <Contact />
       {popup && <Education />}
     </div>

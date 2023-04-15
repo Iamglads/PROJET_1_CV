@@ -11,6 +11,7 @@ import Sidebar from "./Nav/Sidebar";
 import Contact from "./Contact/Contact";
 import Experiences from "./Experiences/Experiences";
 import Form from "./Form/Form";
+import Blog from "./Blog/Blog";
 import Error from "./Error/Error";
 
 export {
@@ -28,4 +29,5 @@ export {
   Stack,
   Sidebar,
   Form,
+  Blog,
 };

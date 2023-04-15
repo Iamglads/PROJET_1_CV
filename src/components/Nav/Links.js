@@ -1,6 +1,7 @@
 import { ImAccessibility } from "react-icons/im";
 import { FiMail } from "react-icons/fi";
 import { GrLinkedin } from "react-icons/gr";
+import { AiFillRead } from "react-icons/ai";
 
 import {
   VscTools,
@@ -26,6 +27,11 @@ export const Links = [
     name: "Réalisations",
     link: "/#realisations",
     icon: <VscTools />,
+  },
+  {
+    name: "Blog",
+    link: "/#blog",
+    icon: <AiFillRead />,
   },
   {
     name: "Contact",
