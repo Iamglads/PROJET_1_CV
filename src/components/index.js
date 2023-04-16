@@ -12,6 +12,7 @@ import Contact from "./Contact/Contact";
 import Experiences from "./Experiences/Experiences";
 import Form from "./Form/Form";
 import Blog from "./Blog/Blog";
+import ArticleDetails from "./Blog/ArticleDetails";
 import Error from "./Error/Error";
 
 export {
@@ -30,4 +31,5 @@ export {
   Sidebar,
   Form,
   Blog,
+  ArticleDetails,
 };

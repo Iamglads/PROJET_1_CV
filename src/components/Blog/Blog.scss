@@ -1,4 +1,7 @@
 
+#blog {
+  background-color: var(--clr-grey);
+}
   .card {
     height: 27rem;
     position: relative;
@@ -39,7 +42,12 @@
     font-size: 0.85rem;
   }
   .blog-center {
+    
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
     gap: 3rem 1rem;
+  }
+
+  .feature-image {
+    margin: 4rem auto;
   }

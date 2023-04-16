@@ -43,6 +43,7 @@ const ArticleList = ({ onArticleClick }) => {
         {articles.map((article) => (
           <ArticleCard
             key={article.id}
+            articleId={article.id}
             featureImage={article._embedded["wp:featuredmedia"][0].source_url}
             title={he.decode(article.title.rendered)}
             description={article.excerpt.rendered}
