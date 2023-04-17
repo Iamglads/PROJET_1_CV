@@ -1,4 +1,3 @@
-// src/components/Realisations/Realisations.js
 import React, { useState, useEffect } from "react";
 import data from "../../portfolio";
 import Card from "./Card/Card";
@@ -23,7 +22,11 @@ const Realisations = () => {
 
   return (
     <section id="realisations" className="section achievements">
-      {/* ... */}
+      <div className="section-title">
+        <h2>Dernières réalisations</h2>
+        <div className="underline"></div>
+        <p className="projects-text">Mes réalisations en agence sur demande.</p>
+      </div>
       <Filter projects={projects} onFilter={filterProjects} />
       <div className="section-center projects-center">
         {filteredProjects.map((project, index) => {
