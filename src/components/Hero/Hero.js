@@ -1,25 +1,55 @@
 import React, { useEffect, useRef } from "react";
-import { TweenMax, Power2 } from "gsap";
+import WOW from "wowjs";
+import "animate.css/animate.min.css";
+
 import Image from "../../assets/images/glad.jpg";
 import { SocialMedia } from "../Nav/Links";
 
 const Hero = () => {
-  const titleAnimation = useRef(null);
+  const myElementRef1 = useRef(null);
+  const myElementRef2 = useRef(null);
+  const myElementRef3 = useRef(null);
+  const myElementRef4 = useRef(null);
 
   useEffect(() => {
-    TweenMax.from(titleAnimation.current, 1, {
-      y: -100,
-      ease: Power2.easeOut,
+    const wow = new WOW.WOW({
+      boxClass: "wow",
+      animateClass: "animated",
+      offset: 0,
+      mobile: false,
+      live: true,
     });
-  }, [titleAnimation]);
+
+    myElementRef1.current && wow.init();
+    myElementRef2.current && wow.init();
+    myElementRef3.current && wow.init();
+    myElementRef4.current && wow.init();
+  }, []);
   return (
     <header className="hero ">
       <div className="section-center hero-center bubbles">
         <article className="hero-info">
           <div className="underline"></div>
-          <h1 ref={titleAnimation}>Gladston Aristoverne</h1>
-          <h4>intégrateur, développeur frontend</h4>
-          <a href="#contact" className="btn hero-btn">
+          <h1
+            ref={myElementRef1}
+            className="wow animate__animated animate__fadeInUp"
+            data-wow-delay=".2s"
+          >
+            Gladston Aristoverne
+          </h1>
+          <h4
+            ref={myElementRef2}
+            className="wow animate__animated animate__fadeInUp"
+            data-wow-delay=".4s"
+          >
+            intégrateur, développeur frontend
+          </h4>
+          <a
+            href="#contact"
+            ref={myElementRef3}
+            className="btn hero-btn wow animate__animated animate__fadeInUp"
+            data-wow-delay=".10s"
+          >
             Contactez-moi!
           </a>
           {/*   social icons */}
@@ -36,7 +66,13 @@ const Hero = () => {
           </ul>
         </article>
         <article className="hero-img">
-          <img src={Image} className="hero-photo" alt="john doe" />
+          <img
+            src={Image}
+            ref={myElementRef4}
+            className="hero-photo wow animate__animated animate__fadeInRight"
+            alt="john doe"
+            data-wow-delay=".6s"
+          />
         </article>
       </div>
     </header>
