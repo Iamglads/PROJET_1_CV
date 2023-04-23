@@ -67,12 +67,12 @@
     },
     {
         "id": 8,
-        "title": "kbatis React",
-        "langages": ["React", "Nodejs"],
+        "title": "Kbatis App",
+        "langages": ["Nextjs", "Firebase", "Tailwind"],
         "image": "https://github.com/Iamglads/Portfolio/blob/main/images/kbatis.png?raw=true",
-        "url": "https://kbatis.herokuapp.com/",
-        "source": "https://github.com/Iamglads/kbatis",
-        "description" : "Suivez le développement de cette application MERN"
+        "url": "https://kbatisapp.vercel.app/",
+        "source": "https://github.com/Iamglads/kbatisapp",
+        "description" : "Suivez le développement de cette application Nextjs/Firebase"
     },
     {
         "id": 9,
