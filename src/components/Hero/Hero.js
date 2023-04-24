@@ -9,7 +9,6 @@ const Hero = () => {
   const myElementRef1 = useRef(null);
   const myElementRef2 = useRef(null);
   const myElementRef3 = useRef(null);
-  const myElementRef4 = useRef(null);
 
   useEffect(() => {
     const wow = new WOW.WOW({
@@ -23,7 +22,6 @@ const Hero = () => {
     myElementRef1.current && wow.init();
     myElementRef2.current && wow.init();
     myElementRef3.current && wow.init();
-    myElementRef4.current && wow.init();
   }, []);
   return (
     <header className="hero ">
@@ -66,13 +64,7 @@ const Hero = () => {
           </ul>
         </article>
         <article className="hero-img">
-          <img
-            src={Image}
-            ref={myElementRef4}
-            className="hero-photo wow animate__animated animate__fadeInRight"
-            alt="john doe"
-            data-wow-delay=".6s"
-          />
+          <img src={Image} className="hero-photo" alt="john doe" />
         </article>
       </div>
     </header>

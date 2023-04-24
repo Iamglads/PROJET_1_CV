@@ -97,9 +97,10 @@ Hero
   background: var(--clr-primary);
 }
 .hero-center {
-  min-height: calc(100vh - 5rem);
+  min-height: 400px;
   display: grid;
   place-items: center;
+  padding: 5em 0;
 }
 .hero-info h4 {
   color: var(--clr-grey-5);
@@ -121,19 +122,21 @@ Hero
 
   .hero-img::before,
   .about-img::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
-    height: 90%;
+    height: 100%;
     border: 0.20rem solid var(--white);
     top: 2rem;
     right: -2rem;
     border-radius: var(--radius);
+    transition: var(--transition);
   }
+  
 }
 .hero-photo {
   max-width: 25rem;
-  max-height: 30rem;
+  max-height: auto;
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: var(--radius);
