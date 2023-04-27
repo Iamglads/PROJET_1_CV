@@ -44,7 +44,7 @@
         "image": "https://github.com/Iamglads/Portfolio/blob/main/images/kbatis-agency.png?raw=true",
         "url": "https://kbatis.com",
         "source": "",
-        "description" : "Création du site vitrine d'une petite agence Web9"
+        "description" : "Création du site vitrine d'une petite agence Web"
     },
     {
         "id": 6,
@@ -91,6 +91,15 @@
         "url": "https://quentinchantrel.com/",
         "source": "",
         "description" : "Portfolio d'un réalisateur intégré dans WordPress avec le Builder de page Elementor."
+    },
+    {
+        "id": 11,
+        "title": "Kbatis Agency",
+        "langages": ["Nextjs", "Tailwind"],
+        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/kbatis-agency.png?raw=true",
+        "url": "https://kbatis.com",
+        "source": "",
+        "description" : "Création du site vitrine d'une petite agence Web"
     }
    
 ]
