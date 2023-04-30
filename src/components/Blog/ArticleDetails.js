@@ -13,7 +13,7 @@ const ArticleDetail = (props, { onBack }) => {
     const fetchArticle = async () => {
       setLoading(true);
       const response = await axios.get(
-        `https://www.kbatis.com/wp-json/wp/v2/posts/${articleId}?_embed`
+        `https://www.api.kbatis.com/wp-json/wp/v2/posts/${articleId}?_embed`
       );
       setArticle(response.data);
       setLoading(false);
