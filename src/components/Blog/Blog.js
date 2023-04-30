@@ -13,7 +13,7 @@ const ArticleList = ({ onArticleClick }) => {
     const fetchArticles = async () => {
       setLoading(true);
       const response = await axios.get(
-        "https://kbatis.com/wp-json/wp/v2/posts?_embed&per_page=3"
+        "https://api.kbatis.com/wp-json/wp/v2/posts?_embed&per_page=3"
       );
       setArticles(response.data);
       setLoading(false);
