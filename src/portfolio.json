@@ -1,6 +1,24 @@
 [
     {
         "id": 1,
+        "title": "Superblada.com",
+        "langages": ["Nextjs", "Nodejs", "MongoDB"],
+        "image": "/images/superblada.png",
+        "url" : "https://superblada.com",
+        "source": "#",
+        "description" : "App de d'annonces en ligne en production"
+    },
+    {
+        "id": 2,
+        "title": "Kabatis Web",
+        "langages": ["Nextjs"],
+        "image": "/images/kabatis.png",
+        "url": "https://kbatis.com",
+        "source": "#",
+        "description" : "Création du site vitrine d'une petite agence Web"
+    },
+    {
+        "id": 3,
         "title": "Calculateur de tips",
         "langages": ["JavaScript"],
         "image": "https://github.com/Iamglads/Portfolio/blob/main/images/tips.png?raw=true",
@@ -9,7 +27,7 @@
         "description" : "Petit projet en Vanilla JavaScript."
     },
     {
-        "id": 2,
+        "id": 4,
         "title": "Kasa",
         "langages": ["React"],
         "image": "https://github.com/Iamglads/Portfolio/blob/main/images/kasa.png?raw=true",
@@ -19,87 +37,22 @@
     },
 
     {
-        "id": 3,
-        "title": "Groupomania",
-        "langages": ["Vuejs", "Nodejs"],
-        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/groupomania.png?raw=true",
-        "url": "https://github.com/Iamglads/projet_7_Groupomania",
-        "source": "https://github.com/Iamglads/projet_7_Groupomania",
-        "description" : "MVP d'une application réseau social d'une entreprise."
-    },
-
-    {
-        "id": 4,
-        "title": "FishEye",
-        "langages": ["JavaScript"],
-        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/fisheye.png?raw=true",
-        "url": "https://ga-fisheye.netlify.app/index.html",
-        "source": "https://github.com/Iamglads/Fisheye.git",
-        "description" : "Application de photographes avec Javascript"
-    },
-    {
         "id": 5,
-        "title": "Kbatis Agency",
-        "langages": ["WordPress"],
-        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/kbatis-agency.png?raw=true",
-        "url": "https://kbatis.com",
-        "source": "",
-        "description" : "Création du site vitrine d'une petite agence Web"
-    },
-    {
-        "id": 6,
-        "title": "Validation de formulaire",
-        "langages": ["JavaScript"],
-        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/form-validation.png?raw=true",
-        "url": "https://ga-js-training.netlify.app/projets/form-validation/form-validation.html",
-        "source": "https://github.com/Iamglads/JavaScript_training/tree/master/projets/form-validation",
-        "description" : "Validation d'un formulaire en Javascript"
-    },
- 
-    {
-        "id": 7,
-        "title": "AJ Loc & Services",
-        "langages": ["WordPress"],
-        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/ajloc.png?raw=true",
-        "url": "https://www.ajlocationetservices.fr/",
-        "source": "",
-        "description" : "Le site e-commerce d'une entreprise, intégré dans WordPress avec le Builder de page Elementor."
-    },
-    {
-        "id": 8,
-        "title": "Kbatis App",
+        "title": "Connexion Québec",
         "langages": ["Nextjs", "Firebase", "Tailwind"],
         "image": "https://github.com/Iamglads/Portfolio/blob/main/images/kbatis.png?raw=true",
-        "url": "https://kbatisapp.vercel.app/",
-        "source": "https://github.com/Iamglads/kbatisapp",
+        "url": "https://connexionqc.com",
+        "source": "https://github.com/Iamglads/connexionqc",
         "description" : "Suivez le développement de cette application Nextjs/Firebase"
     },
     {
-        "id": 9,
+        "id": 6,
         "title": "HooBank",
         "langages": ["React", "Tailwind"],
         "image": "https://github.com/Iamglads/Portfolio/blob/main/images/react-tailwind.png?raw=true",
         "url": "https://ga-react-tailwind.netlify.app/",
         "source": "https://ga-react-tailwind.netlify.app/",
         "description" : "Landing page pour tester tailwind css"
-    },
-    {
-        "id": 10,
-        "title": "Quentin Chantrel",
-        "langages": ["WordPress"],
-        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/qc.png?raw=true",
-        "url": "https://quentinchantrel.com/",
-        "source": "",
-        "description" : "Portfolio d'un réalisateur intégré dans WordPress avec le Builder de page Elementor."
-    },
-    {
-        "id": 11,
-        "title": "Kbatis Agency",
-        "langages": ["Nextjs", "Tailwind"],
-        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/kbatis-agency.png?raw=true",
-        "url": "https://kbatis.com",
-        "source": "",
-        "description" : "Création du site vitrine d'une petite agence Web"
     }
    
 ]
