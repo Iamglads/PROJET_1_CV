@@ -87,7 +87,7 @@ const Apropos = () => {
           <p
             ref={myElementRef5}
             className="wow animate__animated animate__fadeInUp"
-            data-wow-delay=".10s"
+            data-wow-delay=".9s"
           >
             N'hésitez pas à me contacter pour tout projet ou opportunité de
             collaboration. Je suis impatient de vous aider à développer votre

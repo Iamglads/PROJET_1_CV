@@ -40,7 +40,7 @@ const Hero = () => {
             className="wow animate__animated animate__fadeInUp"
             data-wow-delay=".4s"
           >
-            intégrateur, développeur frontend
+            Développeur frontend React/NextJs
           </h4>
           <a
             href="#contact"
@@ -64,7 +64,7 @@ const Hero = () => {
           </ul>
         </article>
         <article className="hero-img">
-          <img src={Image} className="hero-photo" alt="john doe" />
+          <img src={Image} className="hero-photo" alt="Gladston Aristoverne" />
         </article>
       </div>
     </header>

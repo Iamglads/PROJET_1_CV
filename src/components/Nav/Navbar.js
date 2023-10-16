@@ -33,7 +33,7 @@ const Navbar = () => {
       >
         <div className="nav-center">
           <Link to="/" className="nav-logo">
-            <img src={Logo} alt="nav logo" />
+            <img src={Logo} alt="Gladston Aristoverne" />
           </Link>
           <ul className="nav-links">
             {Links.map((link, index) => {
