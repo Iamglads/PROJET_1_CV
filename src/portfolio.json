@@ -2,20 +2,20 @@
     {
         "id": 1,
         "title": "Superblada.com",
-        "langages": ["Nextjs", "Nodejs", "MongoDB"],
+        "langages": ["Nextjs", "React", "Nodejs", "MongoDB"],
         "image": "/images/superblada.png",
         "url" : "https://superblada.com",
         "source": "#",
-        "description" : "App de d'annonces en ligne en production"
+        "description" : "Application d'annonces en ligne en production"
     },
     {
-        "id": 2,
+        "id": 2, 
         "title": "Kabatis Web",
         "langages": ["Nextjs"],
         "image": "/images/kabatis.png",
-        "url": "https://kbatis.com",
+        "url": "https://kabatis.com",
         "source": "#",
-        "description" : "Création du site vitrine d'une petite agence Web"
+        "description" : "Création du site vitrine d'une Agence Web"
     },
     {
         "id": 3,
@@ -38,21 +38,21 @@
 
     {
         "id": 5,
-        "title": "Connexion Québec",
-        "langages": ["Nextjs", "Firebase", "Tailwind"],
-        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/kbatis.png?raw=true",
-        "url": "https://connexionqc.com",
-        "source": "https://github.com/Iamglads/connexionqc",
-        "description" : "Suivez le développement de cette application Nextjs/Firebase"
+        "title": "Quentin Chantrel",
+        "langages": ["React"],
+        "image": "/images/quentin-chantrel.png",
+        "url": "https://quentinchantrel.com",
+        "source": "#",
+        "description" : "Portfolio d'un chef operateur réaliser avec React"
     },
     {
         "id": 6,
-        "title": "HooBank",
-        "langages": ["React", "Tailwind"],
-        "image": "https://github.com/Iamglads/Portfolio/blob/main/images/react-tailwind.png?raw=true",
+        "title": "Striky Design",
+        "langages": ["Sass", "Wordpress"],
+        "image": "/images/striky-design.png",
         "url": "https://ga-react-tailwind.netlify.app/",
-        "source": "https://ga-react-tailwind.netlify.app/",
-        "description" : "Landing page pour tester tailwind css"
+        "source": "#",
+        "description" : "Intégration du template dans Wordpress."
     }
    
 ]

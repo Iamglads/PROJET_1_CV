@@ -24,7 +24,7 @@ const Services = () => {
 
           <article className="service">
             <i className="fab fa-android service-icon"></i>
-            <h4>Référencement</h4>
+            <h4>Référencement Naturel</h4>
             <div className="underline"></div>
           </article>
         </div>
