@@ -6,7 +6,7 @@
         "image": "/images/superblada.png",
         "url" : "https://superblada.com",
         "source": "#",
-        "description" : "Application d'annonces en ligne en production"
+        "description" : "Application Web d'annonces en ligne"
     },
     {
         "id": 2, 
@@ -43,7 +43,7 @@
         "image": "/images/quentin-chantrel.png",
         "url": "https://quentinchantrel.com",
         "source": "#",
-        "description" : "Portfolio d'un chef operateur réaliser avec React"
+        "description" : "Portfolio d'un chef operateur réaliser avec React."
     },
     {
         "id": 6,
@@ -53,6 +53,15 @@
         "url": "https://strikydesign.com",
         "source": "#",
         "description" : "Intégration du template dans Wordpress."
+    },
+    {
+        "id": 7,
+        "title": "Création du Catalogue",
+        "langages": ["Wordpress"],
+        "image": "/images/catalogue-spectre.png",
+        "url": "https://spectre-entertainment.com/catalogue-decors",
+        "source": "#",
+        "description" : "Création de la partie Catalogue du site."
     }
    
 ]
