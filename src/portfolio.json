@@ -56,10 +56,28 @@
     },
     {
         "id": 7,
-        "title": "Création du Catalogue",
+        "title": "Création de site E-commerce",
+        "langages": ["Wordpress"],
+        "image": "/images/site-spectre.png",
+        "url": "https://spectre-entertainment.com",
+        "source": "#",
+        "description" : "Création de la boutique en ligne."
+    },
+    {
+        "id": 8,
+        "title": "Catalogue de décors virtuel",
         "langages": ["Wordpress"],
         "image": "/images/catalogue-spectre.png",
         "url": "https://spectre-entertainment.com/catalogue-decors",
+        "source": "#",
+        "description" : "Création de la partie Catalogue du site."
+    },
+    {
+        "id": 9,
+        "title": "Kabatis Web Antilles Guyane",
+        "langages": ["Wordpress"],
+        "image": "/images/kabatis-fr.png",
+        "url": "https://fr.kabatis.com",
         "source": "#",
         "description" : "Création de la partie Catalogue du site."
     }

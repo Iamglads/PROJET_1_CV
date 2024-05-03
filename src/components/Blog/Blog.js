@@ -13,7 +13,7 @@ const ArticleList = ({ onArticleClick }) => {
     const fetchArticles = async () => {
       setLoading(true);
       const response = await axios.get(
-        "https://api.kbatis.com/wp-json/wp/v2/posts?_embed&per_page=3"
+        "https://fr.kabatis.com/wp-json/wp/v2/posts?_embed&per_page=3"
       );
       setArticles(response.data);
       setLoading(false);
@@ -25,7 +25,7 @@ const ArticleList = ({ onArticleClick }) => {
   const renderSkeletons = () => {
     const skeletonCount = 3;
     const skeletons = [];
-    const customColor = "#FFFFFF"; // Remplacez cette valeur par la couleur de votre choix
+    const customColor = "#FFFFFF";
 
     for (let i = 0; i < skeletonCount; i++) {
       skeletons.push(

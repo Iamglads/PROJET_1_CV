@@ -12,12 +12,12 @@ const Form = () => {
     emailjs
       .send(
         "service_nugqpnf",
-        "template_pu9l7vd", // template id
+        "template_pu9l7vd", 
         {
           to_name: to_name,
           message: message,
         },
-        "fEqik-AE82WKQbh0B" // user id
+        "fEqik-AE82WKQbh0B" 
       )
       .then(
         (response) => {

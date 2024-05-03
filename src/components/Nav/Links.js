@@ -29,9 +29,9 @@ export const Links = [
     icon: <VscTools />,
   },
   {
-    name: "Blog",
-    link: "/#blog",
-    icon: <AiFillRead />,
+    name: "Mon Agence",
+    link: "https://fr.kabatis.com",
+    icon: <VscTools />,
   },
   {
     name: "Contact",
@@ -43,7 +43,7 @@ export const Links = [
 export const SocialMedia = [
   {
     icon: <GrLinkedin />,
-    url: "https://www.linkedin.com/in/gladston-aristoverne/",
+    url: "https://www.linkedin.com/in/glad-ston/",
     class: "social-icon",
   },
   {
@@ -53,7 +53,7 @@ export const SocialMedia = [
   },
   {
     icon: <FaFacebook />,
-    url: "https://www.facebook.com/glad.toi.3",
+    url: "https://www.facebook.com/gladrick/",
     class: "social-icon",
   },
 ];

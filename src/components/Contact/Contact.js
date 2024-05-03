@@ -23,18 +23,6 @@ const Contact = () => {
         <h2>Contact</h2>
         <div className="underline"></div>
       </div>
-
-      <div className="section-center">
-        <div className="btn-actions">
-          <a href={cv} download className="btn btn-download">
-            Télecharger CV
-          </a>
-          <a href={cv} target="_blank" className="btn">
-            Ouvrir CV
-          </a>
-        </div>
-      </div>
-
       <Form />
     </section>
   );
