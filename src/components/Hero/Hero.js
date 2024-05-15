@@ -40,7 +40,7 @@ const Hero = () => {
             className="wow animate__animated animate__fadeInUp"
             data-wow-delay=".4s"
           >
-            Développeur frontend React/NextJs
+            Développeur Web / Spécialiste SEO
           </h4>
           <a
             href="#contact"

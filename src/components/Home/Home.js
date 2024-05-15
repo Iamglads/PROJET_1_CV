@@ -13,7 +13,7 @@ import {
 import { AppContext } from "../../context/context";
 
 const Home = () => {
-  const { popup } = useContext(AppContext);
+
   return (
     <div>
       <Hero />
@@ -21,9 +21,7 @@ const Home = () => {
       <Services />
       <Realisations />
       <Stack />
-      <Blog />
       <Contact />
-      {popup && <Education />}
     </div>
   );
 };

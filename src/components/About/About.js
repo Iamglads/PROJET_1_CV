@@ -2,18 +2,10 @@ import React, { useEffect, useRef, useContext } from "react";
 import WOW from "wowjs";
 import "animate.css/animate.min.css";
 import Image from "../../assets/images/about-img.jpg";
-
 import { AppContext } from "../../context/context";
 
 const Apropos = () => {
-  const myElementRef1 = useRef(null);
-  const myElementRef2 = useRef(null);
-  const myElementRef3 = useRef(null);
-  const myElementRef4 = useRef(null);
-  const myElementRef5 = useRef(null);
-  const myElementRef6 = useRef(null);
-  const myElementRef7 = useRef(null);
-
+  const elementsRefs = useRef([]);
   const { togglePopup } = useContext(AppContext);
 
   useEffect(() => {
@@ -24,13 +16,7 @@ const Apropos = () => {
       mobile: false,
       live: true,
     });
-
-    myElementRef1.current && wow.init();
-    myElementRef2.current && wow.init();
-    myElementRef3.current && wow.init();
-    myElementRef4.current && wow.init();
-    myElementRef5.current && wow.init();
-    myElementRef6.current && wow.init();
+    wow.init();
   }, []);
 
   return (
@@ -39,11 +25,10 @@ const Apropos = () => {
         <article className="about-img">
           <img src={Image} className="hero-photo" alt="Gladston Aristoverne" />
         </article>
-
         <article className="about-info">
           <div className="section-title about-title">
             <h2
-              ref={myElementRef1}
+              ref={(el) => elementsRefs.current[0] = el}
               className="wow animate__animated animate__fadeInUp"
               data-wow-delay=".2s"
             >
@@ -52,51 +37,36 @@ const Apropos = () => {
             <div className="underline"></div>
           </div>
           <p
-            ref={myElementRef2}
+            ref={(el) => elementsRefs.current[1] = el}
             className="wow animate__animated animate__fadeInUp"
             data-wow-delay=".4s"
           >
-            Bienvenue sur mon site portfolio en tant que Développeur Web! Je
-            suis passionné par le développement web et j'ai décidé de me
-            concentrer sur ce domaine pour construire une carrière passionnante
-            et stimulante.
+            Bienvenue sur mon portfolio ! Je suis développeur web passionné, spécialisé dans la création de sites modernes et fonctionnels.
           </p>
           <p
-            ref={myElementRef3}
+            ref={(el) => elementsRefs.current[2] = el}
             className="wow animate__animated animate__fadeInUp"
             data-wow-delay=".6s"
           >
-            Mon objectif est de développer des sites web modernes, fonctionnels
-            et attractifs pour les entreprises et les utilisateurs. Je suis
-            formé en développement web, avec une solide connaissance des
-            technologies frontend telles que HTML, CSS, JavaScript et React. Je
-            suis également en train de m'initier à React Native pour développer
-            mes compétences en développement mobile.
+            Mon expertise inclut HTML, CSS, JavaScript, et React. Je m'initie également à React Native pour le développement mobile.
           </p>
           <p
-            ref={myElementRef4}
+            ref={(el) => elementsRefs.current[3] = el}
             className="wow animate__animated animate__fadeInUp"
             data-wow-delay=".8s"
           >
-            Sur ce site, vous pourrez découvrir mes projets personnels et
-            professionnels, ainsi que mes compétences et mon parcours. Je suis
-            convaincu que je peux apporter une valeur ajoutée à votre entreprise
-            grâce à mes compétences techniques et à ma passion pour le
-            développement web.
+            Découvrez mes projets et compétences sur ce site. Je suis prêt à apporter une valeur ajoutée à votre entreprise grâce à mes connaissances techniques.
           </p>
           <p
-            ref={myElementRef5}
+            ref={(el) => elementsRefs.current[4] = el}
             className="wow animate__animated animate__fadeInUp"
             data-wow-delay=".9s"
           >
-            N'hésitez pas à me contacter pour tout projet ou opportunité de
-            collaboration. Je suis impatient de vous aider à développer votre
-            site web et de construire une relation durable avec vous.
+            Contactez-moi pour toute collaboration. Je suis enthousiaste à l'idée de développer votre site web et de bâtir une relation durable.
           </p>
-
-          <button className="btn" onClick={togglePopup}>
-            Mon Parcours
-          </button>
+          <a className="btn" href="#contact">
+            Contactez-moi
+          </a>
         </article>
       </div>
     </section>
