@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import cv from "../../assets/images/cv.pdf";
-import Form from "../Form/Form";
+
+
 
 const Contact = () => {
   const [name, setName] = useState("Glad");
@@ -22,8 +22,9 @@ const Contact = () => {
       <div className="section-title">
         <h2>Contact</h2>
         <div className="underline"></div>
+        <a className="email" href="mailto:g.aristoverne@kabatis.com" title="Email Gladston Aristoverne">g.aristoverne@kabatis.com</a>
+
       </div>
-      <Form />
     </section>
   );
 };

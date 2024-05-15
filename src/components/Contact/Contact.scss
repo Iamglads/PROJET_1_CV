@@ -5,7 +5,7 @@
     background-size: cover;
     background-attachment: fixed;
     filter: grayscale(1);
-    min-height: 25rem;
+    min-height: 10rem;
     .mail-address {
         color: var(--white);
     }
@@ -21,4 +21,10 @@
             border: 2px solid var(--white);
         }
     }
+
+    
+}
+
+.email {
+    font-size: 20px;
 }
